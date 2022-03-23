@@ -23,3 +23,140 @@
         background: rgb(26, 26, 26)
     }
 }
+
+@media screen and (max-width: 414px) {
+    #header .header-btn-collapse-nav{
+        background: #fbf348;
+    }
+
+    h5.tag-featured {
+        width: 100%;
+    }
+
+    h5.tag-featured {
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    h3.title-featured {
+        font-size: 25px;
+        line-height: 40px;
+        font-weight: bold;
+    }
+
+    .col-lg-10.slider-featured {
+        padding: 0;
+    }
+
+    img.d-block.w-100.img-featured {
+        height: 400px;
+    }
+
+    h3.newest-titles{
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    img.image-newest {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .container-newest {
+        max-width: 100%;
+    }
+
+    button.btn.btn-large.btn-block.btn-primary {
+        padding: 10px;
+        margin-top: 10px;
+        text-align: right;
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #000000;
+        background-color: #fbf348;
+        border: unset;
+        border-radius: unset;
+    }
+
+    .content-about {
+        font-size: 18px;
+        color: #000;
+    }
+
+    .title-about h3 {
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .content-about p {
+        line-height: 30px;
+        color: #000;
+    }
+
+    .py-5 {
+        padding-top: 3rem !important;
+        padding-bottom: 4rem !important;
+    }
+
+    section.featured {
+        margin-bottom: 50px;
+    }
+
+    img.img-fluid.img-contact {
+        display: none;
+    }
+
+    .title-new-funfact h3 {
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .title-contact h3 {
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .information-contact h3 {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .information-contact {
+        width: 100%;
+    }
+
+    .col-md-6.col-lg-3.list-bussiness-footer {
+        margin-top: 0px;
+    }
+
+    .overlay-newest{
+        width: 100%;
+    }
+
+    .kreator-karya-newest {
+        color: #fbf348;
+        font-size: 20px;
+        position: absolute;
+        top: 90%;
+        left: 30%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .judul-karya-newest {
+        color: white;
+        font-size: 32px;
+        position: absolute;
+        top: 75%;
+        left: 31%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+        font-weight: 600;
+    }
+}
