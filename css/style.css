@@ -1,0 +1,500 @@
+.container-fluid {
+    width: 95%;
+}
+
+.side-header-narrow-bar-logo.bg-color-primary.d-flex.justify-content-center {
+    background-color: #000000 !important;
+}
+
+html.side-header-hamburguer-sidebar #header.side-header {
+    background: unset;
+}
+
+.hamburguer-btn .hamburguer span {
+    background: #fbf348;
+}
+
+.side-header-narrow-bar-content.d-flex.align-items-center.text-center.h-100 {
+    background-color: #000000 !important;
+}
+
+.hamburguer-btn .close span {
+    background: #fbf348;
+}
+
+.hamburguer-btn .hamburguer span {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    transition: ease width 300ms;
+    transform: translateX(10px);
+}
+
+html.side-header-hamburguer-sidebar #header.side-header.side-header-lg {
+    max-width: 100%;
+}
+
+#header .header-body {
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.5);
+    transition: min-height .3s ease;
+    width: 100%;
+    border-top: 3px solid #ededed;
+    border-bottom: 1px solid transparent;
+    z-index: 1001;
+}
+
+
+input.search-home {
+    width: 70%;
+    padding: 7px;
+    border: unset;
+}
+
+button.button-search-home {
+    padding: 7px;
+    width: 60px;
+    background-color: #fbf348;
+    border: unset;
+}
+
+ul#mainNav a {
+    font-size: 5vw !important;
+    line-height: 4vw;
+    color: #fbf348 !important;
+}
+
+ul#mainNav a:hover {
+    color: #fff !important;
+}
+
+ul#mainNav {
+    height: auto !important;
+}
+
+form.search-menu {
+    margin-bottom: 50px;
+}
+
+header.header-display {
+    position: relative;
+    z-index: 1;
+}
+
+div#revolutionSlider_forcefullwidth {
+    margin-top: -85px !important;
+}
+
+.header-logo-display img {
+    margin-left: 35px;
+}
+
+nav.menu-display li {
+    display: inline;
+}
+
+nav.menu-display a {
+    color: #fff;
+    padding: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+nav.menu-display a:hover {
+    color: #fbf348;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+img.d-block.w-100.img-featured {
+    height: 790px;
+    object-fit: cover;
+}
+
+.carousel-control-prev {
+    left: -75px;
+}
+
+.carousel-control-next {
+    right: -75px;
+}
+
+/* .carousel-caption.d-none.d-md-block {
+    position: absolute;
+    text-align: left;
+    top: 285px;
+    left: 100px;
+} */
+
+.carousel-caption h1 {
+    color: #fff;
+    font-size: 75px;
+    font-weight: bold;
+}
+
+.carousel-caption p {
+    color: #fff;
+    font-size: 20px;
+}
+
+h3.title-featured {
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: bold;
+}
+
+h5.tag-featured {
+    width: 70%;
+    margin: auto;
+    padding: 0px 0px 50px 0px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 30px;
+    text-transform: unset;
+    margin-top: 50px;
+}
+
+h3.newest-titles {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+a.button-link {
+    padding: 15px;
+    margin-top: 20px;
+    text-align: right;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000000;
+    background-color: #fbf348;
+}
+
+a.button-link:hover {
+    background-color: #000000;
+    color: #fff;
+    text-decoration: none;
+}
+
+.title-about h3 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.content-about {
+    font-size: 25px;
+    color: #000;
+}
+
+.content-about p {
+    line-height: 35px;
+}
+
+.button-about {
+    padding: 15px;
+    margin-top: 20px;
+    text-align: right;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000000;
+    background-color: #fbf348;
+}
+
+.button-about a {
+    color: #000;
+}
+
+.button-about a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.py-5 {
+    padding-top: 10rem !important;
+    padding-bottom: 10rem !important;
+}
+
+.title-new-funfact h3 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.title-new-funfact p {
+    font-size: 20px;
+    color: #000;
+    font-weight: 600;
+}
+
+img.img-fluid.img-contact {
+    height: 480px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.title-contact h3 {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.information-contact p {
+    font-size: 20px;
+}
+
+.information-contact h3 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.information-contact {
+    width: 80%;
+}
+
+footer#footer {
+    background: #000000;
+}
+
+.footer-copyright.footer-copyright-style-2.pt-4.pb-5 {
+    background: #000000 !important;
+}
+
+.col-md-6.col-lg-4.mb-5.mb-md-0.list-sosial-media-footer {
+    margin-top: 100px;
+}
+
+.col-md-6.col-lg-3.mb-5.mb-lg-0.list-logo-footer ul li a {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #fff !important;
+    margin-left: 7px;
+    line-height: 35px;
+}
+
+.col-md-6.col-lg-4.mb-5.mb-md-0.list-sosial-media-footer ul li a {
+    font-size: 20px;
+    color: #fff !important;
+    line-height: 35px;
+}
+
+.col-md-6.col-lg-3.list-bussiness-footer p {
+    font-size: 20px;
+    color: #fff !important;
+}
+
+.col-md-6.col-lg-3.list-bussiness-footer {
+    margin-top: 100px;
+}
+
+button.btn.btn-large.btn-block.btn-primary {
+    padding: 15px;
+    margin-top: 20px;
+    text-align: right;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000000;
+    background-color: #fbf348;
+    border: unset;
+    border-radius: unset;
+}
+
+button.btn.btn-large.btn-block.btn-primary:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.header-logo-display {
+    position: absolute;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.image-newest {
+    display: block;
+    width: 830px;
+    height: 500px;
+}
+
+.overlay-newest {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 830px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(0, 0, 0, 0.719);
+}
+
+.container-newest:hover .overlay-newest {
+    opacity: 1;
+}
+
+.judul-karya-newest {
+    color: white;
+    font-size: 32px;
+    position: absolute;
+    top: 80%;
+    left: 19%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-weight: 600;
+}
+
+.kreator-karya-newest {
+    color: #fbf348;
+    font-size: 20px;
+    position: absolute;
+    top: 90%;
+    left: 25%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.container-newest {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+
+.active {
+    color: #fbf348 !important;
+    text-decoration: underline;
+    font-weight: bold !important;
+
+}
+
+/* Page About */
+
+
+.title-page-about h3 {
+    font-size: 40px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.content-desc-about p {
+    font-size: 25px;
+    line-height: 35px;
+    color: #fff;
+}
+
+.title-our-service h3 {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.list-services ul li {
+    font-size: 23px;
+    margin-top: 13px;
+}
+
+img.img-fluid.img-our-service-about {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    margin-top: 50px;
+}
+
+.title-our-team h3 {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.image-team {
+    width: 400px;
+    height: auto;
+}
+
+.overlay-team {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 15px;
+    right: 0;
+    height: 100%;
+    width: 0;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: #fbf348;
+}
+
+.container-img-team:hover .overlay-team {
+    opacity: 1;
+}
+
+img.img-overlay-team {
+    width: 400px;
+    height: auto;
+    margin-top: 10px;
+}
+
+.container-img-team {
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.detail-team h4 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.detail-team p {
+    font-size: 18px;
+}
+
+.timeline img {
+    width: 100%;
+}
+
+
+/* Page Catalog */
+.menu-catalog-active li {
+    display: inline;
+    padding: 10px;
+}
+
+.menu-catalog-active a {
+    color: #000;
+    font-size: 20px;
+}
+
+.menu-catalog-active a:hover {
+    color: #000;
+    font-weight: bold;
+    transition: 300ms;
+}
+
+section.catalog {
+    margin-top: 25px;
+}
+
+.catalog-active {
+    color: #000 !important;
+    text-decoration: underline;
+    font-weight: bold !important;
+
+}
+
+.hamburguer-btn.hamburguer-btn-sticky-dark {
+    transform: rotate(90deg);
+    margin-left: 30px;
+}
+
+.header-logo-display .menu-display {
+    margin: 15px;
+}

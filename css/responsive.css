@@ -1,0 +1,25 @@
+@media screen and (min-width: 1000px) {
+    .mobile {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    .desktop {
+        display: none !important;
+    }
+
+    html.side-header-hamburguer-sidebar-narrow-bar .body {
+        margin-left: 0 !important;
+        padding-left: 0 !important;
+    }
+
+    html.side-header-hamburguer-sidebar-narrow-bar #header {
+        padding-left: 0 !important;
+        left: 0 !important;
+    }
+
+    #header .header-body {
+        background: rgb(26, 26, 26)
+    }
+}
