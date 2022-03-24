@@ -59,7 +59,7 @@
 
     img.image-newest {
         width: 100%;
-        height: 300px;
+        height: 200px;
         object-fit: cover;
     }
 
@@ -137,10 +137,10 @@
 
     .kreator-karya-newest {
         color: #fbf348;
-        font-size: 20px;
+        font-size: 14px;
         position: absolute;
-        top: 90%;
-        left: 30%;
+        top: 80%;
+        left: 37%;
         -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
@@ -149,10 +149,10 @@
 
     .judul-karya-newest {
         color: white;
-        font-size: 32px;
+        font-size: 25px;
         position: absolute;
-        top: 75%;
-        left: 31%;
+        top: 65%;
+        left: 30%;
         -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
