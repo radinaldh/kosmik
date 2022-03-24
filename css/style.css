@@ -498,3 +498,20 @@ section.catalog {
 .header-logo-display .menu-display {
     margin: 15px;
 }
+
+
+img.img-fluid.border-radius-0.img-news {
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.owl-carousel.nav-style-1 .owl-nav .owl-next:before, .owl-carousel.nav-style-1 .owl-nav .owl-next:after, .owl-carousel.nav-style-1 .owl-nav .owl-prev:before, .owl-carousel.nav-style-1 .owl-nav .owl-prev:after {
+    font-size: 40px;
+}
+
+.title-new-funfact h1 {
+    font-size: 37px;
+    padding-right: 150px;
+    font-weight: bold;
+}

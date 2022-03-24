@@ -159,4 +159,8 @@
         text-align: center;
         font-weight: 600;
     }
+
+    .title-new-funfact h1 {
+        padding-right: unset;
+    }
 }
