@@ -163,4 +163,10 @@
     .title-new-funfact h1 {
         padding-right: unset;
     }
+
+    img.img-news-funfact {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
 }

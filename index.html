@@ -63,6 +63,10 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.13.1/dist/css/uikit.min.css" />
+
+
     <!-- Head Libs -->
     <script src="vendor/modernizr/modernizr.min.js"></script>
 
@@ -395,7 +399,45 @@
                         </div>
                     </div>
                     <div class="col-lg-8">
-                        <div class="owl-carousel owl-theme nav-inside nav-style-1 nav-light"
+                        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+
+                            <ul class="uk-slider-items uk-grid">
+                                <li class="uk-width-4-5">
+                                    <div class="uk-panel">
+                                        <img src="img/slider-kosmik.jpg" class="img-news-funfact" alt="">
+                                        <div class="uk-position-center uk-text-center">
+                                            <!-- <h2 uk-slider-parallax="x: 100,-100">Heading</h2>
+                                            <p uk-slider-parallax="x: 200,-200">Lorem ipsum dolor sit amet.</p> -->
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="uk-width-4-5">
+                                    <div class="uk-panel">
+                                        <img src="img/slider-kosmik-2.jpg" class="img-news-funfact" alt="">
+                                        <div class="uk-position-center uk-text-center">
+                                            <!-- <h2 uk-slider-parallax="x: 100,-100">Heading</h2>
+                                            <p uk-slider-parallax="x: 200,-200">Lorem ipsum dolor sit amet.</p> -->
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="uk-width-4-5">
+                                    <div class="uk-panel">
+                                        <img src="img/slider-kosmik-3.jpg" class="img-news-funfact" alt="">
+                                        <div class="uk-position-center uk-text-center">
+                                            <!-- <h2 uk-slider-parallax="x: 100,-100">Heading</h2>
+                                            <p uk-slider-parallax="x: 200,-200">Lorem ipsum dolor sit amet.</p> -->
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#"
+                                uk-slidenav-previous uk-slider-item="previous" class="arrow-slider-news"></a>
+                            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#"
+                                uk-slidenav-next uk-slider-item="next"></a>
+
+                        </div>
+                        <!-- <div class="owl-carousel owl-theme nav-inside nav-style-1 nav-light"
                             data-plugin-options="{'items': 1, 'margin': 10, 'loop': false, 'nav': true, 'dots': false}">
                             <div>
                                 <div class="img-thumbnail border-0 p-0 d-block">
@@ -414,7 +456,7 @@
                                         alt="">
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
 
                     </div>
                     <div class="span9 btn-block">
@@ -567,6 +609,10 @@
             });
         });
     </script>
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.13.1/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.13.1/dist/js/uikit-icons.min.js"></script>
 
 </body>
 

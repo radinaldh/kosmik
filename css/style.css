@@ -365,7 +365,6 @@ button.btn.btn-large.btn-block.btn-primary:hover {
 .container-newest {
     position: relative;
     width: 100%;
-    max-width: 300px;
     cursor: pointer;
     margin-bottom: 10px;
 }
@@ -514,4 +513,20 @@ img.img-fluid.border-radius-0.img-news {
     font-size: 37px;
     padding-right: 150px;
     font-weight: bold;
+}
+
+img.img-news-funfact {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+a.uk-position-center-left.uk-position-small.uk-hidden-hover.uk-icon.uk-slidenav-previous.uk-slidenav svg {
+    color: #000;
+    width: 20px;
+}
+
+a.uk-position-center-right.uk-position-small.uk-hidden-hover.uk-icon.uk-slidenav-next.uk-slidenav svg {
+    color: #000;
+    width: 20px;
 }
