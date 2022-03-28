@@ -169,4 +169,56 @@
         height: 300px;
         object-fit: cover;
     }
+
+    .content-desc-about p {
+        font-size: 17px;
+        line-height: 30px;
+        color: #000;
+    }
+
+    section.py-5.first-section-about {
+        background-color: #fff !important;
+        border-bottom: 1px solid #000;
+        padding-top: 30px !important;
+        padding-bottom: 30px !IMPORTANT;
+    }
+
+    .title-page-about h3 {
+        font-size: 40px;
+        font-weight: 600;
+        color: #000;
+    }
+
+    .timeline {
+        display: none;
+    }
+
+    section.py-5.section-timeline {
+        display: none;
+    }
+
+    .list-services ul li {
+        font-size: 17px;
+        margin-top: 0px;
+    }
+
+    .detail-team h4 {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .detail-team p {
+        font-size: 17px;
+        margin-top: -15px;
+    }
+
+    section.py-5.section-our-team {
+        padding-bottom: 0px !important;
+    }
+
+    img.img-fluid.img-our-service-about {
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+    }
 }

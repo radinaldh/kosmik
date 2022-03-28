@@ -63,6 +63,10 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.13.1/dist/css/uikit.min.css" />
+
+
     <!-- Head Libs -->
     <script src="vendor/modernizr/modernizr.min.js"></script>
 
@@ -94,8 +98,58 @@
                 </div>
             </div>
         </div>
-        <header class="header-display">
-            <div class="header-row flex-row justify-content-center py-3">
+        <header id="header" class="header-effect-shrink mobile"
+            data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyChangeLogo': true, 'stickyStartAt': 30, 'stickyHeaderContainerHeight': 70}"
+            style="height: 101px;">
+            <div class="header-body border-top-0">
+                <div class="header-container container-fluid px-lg-4" style="height: 100px;">
+                    <div class="header-row">
+                        <div class="header-column">
+                            <div class="header-row">
+                                <div class="header-logo" style="width: 100px; height: 48px;">
+                                    <a href="index.html">
+                                        <img alt="Kosmik" data-sticky-width="82" data-sticky-height="40"
+                                            src="img/logo-kosmik.png" width="100" height="48">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-column justify-content-end">
+                            <div class="header-row">
+                                <div class="header-nav header-nav-links order-2 order-lg-1">
+                                    <div
+                                        class="header-nav-main header-nav-main-square header-nav-main-effect-2 header-nav-main-sub-effect-1">
+                                        <nav class="collapse">
+                                            <ul class="nav nav-pills" id="mainNav">
+                                                <li>
+                                                    <a href="about.html">About</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Catalog</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">News</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Contact</a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                    <button class="btn header-btn-collapse-nav" data-bs-toggle="collapse"
+                                        data-bs-target=".header-nav-main nav">
+                                        <i class="fas fa-bars"></i>
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <header class="header-display desktop">
+            <div class="header-row flex-row justify-content-center">
                 <div class="header-logo-display d-flex">
                     <a href="index.html">
                         <img alt="Kosmik" src="img/logo-kosmik.png" width="120" height="50">
@@ -127,14 +181,15 @@
                 </div>
             </div>
         </header>
-        <header id="header" class="side-header side-header-lg side-header-hide d-flex">
+        <header id="header" class="side-header side-header-lg side-header-hide d-flex desktop">
             <div class="header-body">
                 <div class="header-container container d-flex h-100">
                     <div class="header-column flex-column justify-content-center h-100">
                         <div class="header-row flex-row justify-content-center py-5">
                             <div class="header-logo">
                                 <a href="index.html">
-                                    <img alt="Porto" width="100" height="48" src="img/logo-kosmik.png">
+                                    <img alt="Porto" width="100" height="48" src="img/logo-kosmik.png"
+                                        class="logo-menu-side">
                                 </a>
                             </div>
                         </div>
@@ -184,7 +239,6 @@
                 </div>
             </div>
         </header>
-        <!-- //// -->
 
 
 
@@ -215,7 +269,7 @@
             </div>
         </section>
 
-        <section class="py-5" style="border-bottom: 1px solid #000;">
+        <section class="section-services" style="border-bottom: 1px solid #000;">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
@@ -241,17 +295,16 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <img src="img/slider-kosmik-3.jpg" class="img-fluid img-our-service-about" alt="...">
-                        </div>
+
+                    <div class="col-lg-12">
+                        <img src="img/slider-kosmik-3.jpg" class="img-fluid img-our-service-about" alt="...">
                     </div>
                 </div>
             </div>
         </section>
 
 
-        <section class="py-5" style="border-bottom: 1px solid #000;">
+        <section class="py-5 section-timeline" style="border-bottom: 1px solid #000;">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
@@ -264,104 +317,86 @@
         </section>
 
 
-        <section class="py-5">
+        <section class="py-5 section-our-team">
             <div class="container-fluid">
                 <div class="title-our-team">
                     <h3>Our Team</h3>
                 </div>
                 <div class="row">
-                    <div class="col-lg-3">
-                        <div class="container-img-team">
-                            <img src="img/team-kosmik-9.png" alt="Avatar" class="image-team">
-                            <div class="overlay-team">
-                                <img src="img/team-kosmik-9-1.png" alt="" srcset="" class="img-overlay-team">
-                            </div>
+                    <div class="col-lg-3 col-xs-6">
+                        <div class="our-team">
+                            <img src="img/team-kosmik-9.png" alt="Card Back" class="img-before-hover">
+                            <img src="img/team-kosmik-9-1.png" class="img-top" alt="Card Front">
                             <div class="detail-team">
                                 <h4>Sunny Gho</h4>
                                 <p>CEO</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3">
-                        <div class="container-img-team">
-                            <img src="img/team-kosmik-1.png" alt="Avatar" class="image-team">
-                            <div class="overlay-team">
-                                <img src="img/team-kosmik-1.png" alt="" srcset="" class="img-overlay-team">
-                            </div>
+                    <div class="col-lg-3 col-xs-6">
+                        <div class="our-team">
+                            <img src="img/team-kosmik-1.png" alt="Card Back" class="img-before-hover">
+                            <img src="img/team-kosmik-1.png" class="img-top" alt="Card Front">
                             <div class="detail-team">
                                 <h4>Sunny Gho</h4>
                                 <p>CEO</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3">
-                        <div class="container-img-team">
-                            <img src="img/team-kosmik-2.png" alt="Avatar" class="image-team">
-                            <div class="overlay-team">
-                                <img src="img/team-kosmik-2.png" alt="" srcset="" class="img-overlay-team">
-                            </div>
+                    <div class="col-lg-3 col-xs-6">
+                        <div class="our-team">
+                            <img src="img/team-kosmik-2.png" alt="Card Back" class="img-before-hover">
+                            <img src="img/team-kosmik-2.png" class="img-top" alt="Card Front">
                             <div class="detail-team">
                                 <h4>Sunny Gho</h4>
                                 <p>CEO</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3">
-                        <div class="container-img-team">
-                            <img src="img/team-kosmik-3.png" alt="Avatar" class="image-team">
-                            <div class="overlay-team">
-                                <img src="img/team-kosmik-3.png" alt="" srcset="" class="img-overlay-team">
-                            </div>
+                    <div class="col-lg-3 col-xs-6">
+                        <div class="our-team">
+                            <img src="img/team-kosmik-3.png" alt="Card Back" class="img-before-hover">
+                            <img src="img/team-kosmik-3.png" class="img-top" alt="Card Front">
                             <div class="detail-team">
                                 <h4>Sunny Gho</h4>
                                 <p>CEO</p>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-3">
-                        <div class="container-img-team">
-                            <img src="img/team-kosmik-4.png" alt="Avatar" class="image-team">
-                            <div class="overlay-team">
-                                <img src="img/team-kosmik-4.png" alt="" srcset="" class="img-overlay-team">
-                            </div>
+                    <div class="col-lg-3 col-xs-6">
+                        <div class="our-team">
+                            <img src="img/team-kosmik-4.png" alt="Card Back" class="img-before-hover">
+                            <img src="img/team-kosmik-4.png" class="img-top" alt="Card Front">
                             <div class="detail-team">
                                 <h4>Sunny Gho</h4>
                                 <p>CEO</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3">
-                        <div class="container-img-team">
-                            <img src="img/team-kosmik-5.png" alt="Avatar" class="image-team">
-                            <div class="overlay-team">
-                                <img src="img/team-kosmik-5.png" alt="" srcset="" class="img-overlay-team">
-                            </div>
+                    <div class="col-lg-3 col-xs-6">
+                        <div class="our-team">
+                            <img src="img/team-kosmik-5.png" alt="Card Back" class="img-before-hover">
+                            <img src="img/team-kosmik-5.png" class="img-top" alt="Card Front">
                             <div class="detail-team">
                                 <h4>Sunny Gho</h4>
                                 <p>CEO</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3">
-                        <div class="container-img-team">
-                            <img src="img/team-kosmik-6.png" alt="Avatar" class="image-team">
-                            <div class="overlay-team">
-                                <img src="img/team-kosmik-6.png" alt="" srcset="" class="img-overlay-team">
-                            </div>
+                    <div class="col-lg-3 col-xs-6">
+                        <div class="our-team">
+                            <img src="img/team-kosmik-6.png" alt="Card Back" class="img-before-hover">
+                            <img src="img/team-kosmik-6.png" class="img-top" alt="Card Front">
                             <div class="detail-team">
                                 <h4>Sunny Gho</h4>
                                 <p>CEO</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3">
-                        <div class="container-img-team">
-                            <img src="img/team-kosmik-7.png" alt="Avatar" class="image-team">
-                            <div class="overlay-team">
-                                <img src="img/team-kosmik-7.png" alt="" srcset="" class="img-overlay-team">
-                            </div>
+                    <div class="col-lg-3 col-xs-6">
+                        <div class="our-team">
+                            <img src="img/team-kosmik-7.png" alt="Card Back" class="img-before-hover">
+                            <img src="img/team-kosmik-7.png" class="img-top" alt="Card Front">
                             <div class="detail-team">
                                 <h4>Sunny Gho</h4>
                                 <p>CEO</p>
@@ -371,6 +406,7 @@
                 </div>
             </div>
         </section>
+
 
 
 
@@ -390,8 +426,8 @@
         <footer id="footer" class="footer-texts-more-lighten">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-6 col-lg-3 mb-5 mb-lg-0 list-logo-footer">
-                        <img src="img/logo-kosmik.png" alt="" srcset="">
+                    <div class="col-md-6 col-lg-3 col-xs-6 mb-5 mb-lg-0 list-logo-footer">
+                        <img src="img/logo-kosmik.png" class="logo-footer" alt="" srcset="">
                         <ul class="list list-unstyled mb-0">
                             <li class="mb-0"><a href="#">About</a></li>
                             <li class="mb-0"><a href="#">Catalog</a></li>
@@ -399,7 +435,7 @@
                             <li class="mb-0"><a href="#">Contact</a></li>
                         </ul>
                     </div>
-                    <div class="col-md-6 col-lg-4 mb-5 mb-md-0 list-sosial-media-footer">
+                    <div class="col-md-6 col-lg-4 col-xs-6 mb-5 mb-md-0 list-sosial-media-footer">
                         <ul class="list list-unstyled mb-0">
                             <li class="mb-0"><a href="#">Instagram</a></li>
                             <li class="mb-0"><a href="#">Facebook</a></li>
@@ -476,7 +512,9 @@
                 slides[i].style.display = "none";
             }
             slideIndex++;
-            if (slideIndex > slides.length) { slideIndex = 1 }
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
             for (i = 0; i < dots.length; i++) {
                 dots[i].className = dots[i].className.replace(" active", "");
             }
@@ -500,6 +538,10 @@
             });
         });
     </script>
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.13.1/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.13.1/dist/js/uikit-icons.min.js"></script>
 
 </body>
 

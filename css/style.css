@@ -530,3 +530,57 @@ a.uk-position-center-right.uk-position-small.uk-hidden-hover.uk-icon.uk-slidenav
     color: #000;
     width: 20px;
 }
+
+.header-row.flex-row.justify-content-center.py-5 {
+    padding-top: 100px !important;
+    padding-bottom: 10px !important;
+}
+
+img.logo-menu-side {
+    width: 100%;
+}
+
+section.section-services {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+section.py-5.first-section-about {
+    padding-bottom: 50px !important;
+    padding-top: 100px !important;
+}
+
+section.py-5.section-timeline {
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+}
+
+section.py-5.section-our-team {
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+}
+
+
+.our-team {
+    position: relative;
+    display: inline-block;
+}
+.our-team .img-top {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.our-team:hover .img-top {
+    display: inline;
+}
+
+img.img-before-hover {
+    width: 400px;
+}
+
+.our-team:hover .img-top {
+    display: inline;
+    width: 400px;
+}
