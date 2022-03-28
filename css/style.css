@@ -27,9 +27,10 @@ html.side-header-hamburguer-sidebar #header.side-header {
     top: 50%;
     left: 0;
     width: 100%;
-    height: 1px;
+    height: 3px;
     transition: ease width 300ms;
     transform: translateX(10px);
+    border-radius: 10px;
 }
 
 html.side-header-hamburguer-sidebar #header.side-header.side-header-lg {
@@ -49,14 +50,15 @@ html.side-header-hamburguer-sidebar #header.side-header.side-header-lg {
 
 
 input.search-home {
-    width: 70%;
+    width: 80%;
     padding: 7px;
     border: unset;
+    margin-right: -4px;
 }
 
 button.button-search-home {
     padding: 7px;
-    width: 60px;
+    width: 45px;
     background-color: #fbf348;
     border: unset;
 }
@@ -89,7 +91,8 @@ div#revolutionSlider_forcefullwidth {
 }
 
 .header-logo-display img {
-    margin-left: 35px;
+    margin-left: 40px;
+    width: 75%;
 }
 
 nav.menu-display li {
@@ -145,22 +148,25 @@ h3.title-featured {
     font-size: 40px;
     line-height: 40px;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 h5.tag-featured {
     width: 70%;
     margin: auto;
     padding: 0px 0px 50px 0px;
-    font-size: 20px;
+    font-size: 30px;
     text-align: center;
-    line-height: 30px;
+    line-height: 35px;
     text-transform: unset;
     margin-top: 50px;
+    font-weight: bold;
 }
 
 h3.newest-titles {
     font-size: 40px;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 a.button-link {
@@ -183,6 +189,7 @@ a.button-link:hover {
 .title-about h3 {
     font-size: 40px;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 .content-about {
@@ -192,6 +199,8 @@ a.button-link:hover {
 
 .content-about p {
     line-height: 35px;
+    color: #000;
+    font-weight: bold;
 }
 
 .button-about {
@@ -223,6 +232,7 @@ a.button-link:hover {
 .title-new-funfact h3 {
     font-size: 40px;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 .title-new-funfact p {
@@ -240,15 +250,18 @@ img.img-fluid.img-contact {
 .title-contact h3 {
     font-size: 40px;
     font-weight: 600;
+    text-transform: uppercase;
 }
 
 .information-contact p {
     font-size: 20px;
+    color: #000;
+    font-weight: bold;
 }
-
 .information-contact h3 {
     font-size: 25px;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 .information-contact {
@@ -317,7 +330,7 @@ button.btn.btn-large.btn-block.btn-primary:hover {
 .image-newest {
     display: block;
     width: 830px;
-    height: 500px;
+    height: 440px;
 }
 
 .overlay-newest {
@@ -347,19 +360,21 @@ button.btn.btn-large.btn-block.btn-primary:hover {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
-    font-weight: 600;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .kreator-karya-newest {
     color: #fbf348;
     font-size: 20px;
     position: absolute;
-    top: 90%;
-    left: 25%;
+    top: 85%;
+    left: 23.5%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
+    font-weight: bold;
 }
 
 .container-newest {
@@ -495,7 +510,8 @@ section.catalog {
 }
 
 .header-logo-display .menu-display {
-    margin: 15px;
+    margin-top: 15px;
+    margin-right: 50px;
 }
 
 
@@ -583,4 +599,123 @@ img.img-before-hover {
 .our-team:hover .img-top {
     display: inline;
     width: 400px;
+}
+
+img.img-after-hover {
+    width: 400px;
+    position: relative;
+    left: -3%;
+}
+
+.arrow-slider-team {
+    text-align: right;
+    padding-top: 10px;
+    padding-right: 50px;
+    font-size: 35px;
+}
+
+.arrow-slider-team span {
+    color: #000;
+}
+
+.carousel-dark .carousel-indicators [data-bs-target]{
+    background-color: #fbf348;
+}
+
+.carousel-indicators [data-bs-target] {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 12px;
+    height: auto;
+    padding: 0;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: .5;
+    transition: opacity .6s ease;
+}
+
+section.py-5.newest {
+    padding-top: 50px !important;
+    padding-bottom: 100px !important;
+}
+
+section.py-5.about-home {
+    padding-top: 100px !important;
+    padding-bottom: 100px !important;
+}
+
+section.py-5.news-home {
+    padding-top: 100px !important;
+    padding-bottom: 100px !important;
+}
+
+section.py-5.contact-home {
+    padding-top: 100px !important;
+    padding-bottom: 50px !important;
+}
+
+nav.menu-display li {
+    line-height: 34px;
+}
+
+img.logo-planet {
+    width: 100%;
+}
+
+input.search-home-hamburger {
+    width: 60%;
+    padding: 10px;
+    border: unset;
+    margin-right: -5px;
+}
+
+button.button-search-home-hamburger {
+    padding: 10px;
+    width: 45px;
+    background-color: #fbf348;
+    border: unset;
+}
+
+html.side-header-hamburguer-sidebar #header.side-header .header-nav.header-nav-links nav>ul>li>a {
+    height: auto;
+    transition: 0.5s;
+}
+
+.social-icons li a {
+    transition: all .2s ease;
+    border-radius: 100%;
+    display: block;
+    height: auto;
+    line-height: 28px;
+    width: 100%;
+    text-align: center;
+    color: #fff!important;
+    text-decoration: none;
+    font-size: 40px !important;
+    margin: 10px;
+}
+
+.social-icons li:hover a{
+    background-color: transparent;
+}
+
+.bi-instagram:hover, .bi-facebook:hover, .bi-twitter:hover{
+    color: #fbf348;
+}
+
+.header-row.justify-content-end.pb-3.social-hamburger p {
+    font-size: 22px;
+    color: #fff;
+    padding-right: 20px;
+}
+
+.header-row.justify-content-end.pb-3.social-hamburger {
+    align-items: end !important;
 }
