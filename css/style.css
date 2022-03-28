@@ -719,3 +719,11 @@ html.side-header-hamburguer-sidebar #header.side-header .header-nav.header-nav-l
 .header-row.justify-content-end.pb-3.social-hamburger {
     align-items: end !important;
 }
+
+.slider-container.rev_slider_wrapper.fullscreen-slider {
+    height: 106vh !important;
+}
+
+section.featured {
+    padding-top: 50px;
+}
