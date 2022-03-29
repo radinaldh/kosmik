@@ -24,13 +24,22 @@ html.side-header-hamburguer-sidebar #header.side-header {
 
 .hamburguer-btn .hamburguer span {
     position: absolute;
-    top: 50%;
-    left: 0;
-    width: 100%;
-    height: 3px;
+    left: -25px;
+    width: 60px;
+    height: 4px;
     transition: ease width 300ms;
     transform: translateX(10px);
-    border-radius: 10px;
+    border-radius: 0px;
+}
+
+  .hamburguer-btn .hamburguer span:nth-child(2) {
+    margin-top: 3px;
+  }
+  .hamburguer-btn .hamburguer span:nth-child(1) {
+    margin-top: -5px;
+  }
+  .hamburguer-btn .hamburguer span:nth-child(3) {
+    margin-top: 10px;
 }
 
 html.side-header-hamburguer-sidebar #header.side-header.side-header-lg {
@@ -50,7 +59,7 @@ html.side-header-hamburguer-sidebar #header.side-header.side-header-lg {
 
 
 input.search-home {
-    width: 80%;
+    width: 75%;
     padding: 7px;
     border: unset;
     margin-right: -4px;
@@ -79,6 +88,7 @@ ul#mainNav {
 
 form.search-menu {
     margin-bottom: 50px;
+    margin-left: 30px;
 }
 
 header.header-display {
@@ -102,9 +112,10 @@ nav.menu-display li {
 nav.menu-display a {
     color: #fff;
     padding: 20px;
-    font-size: 20px;
+    font-size: 23px;
     text-transform: uppercase;
     font-weight: 400;
+    transition: 0.2s;
 }
 
 nav.menu-display a:hover {
@@ -137,11 +148,12 @@ img.d-block.w-100.img-featured {
     color: #fff;
     font-size: 75px;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 .carousel-caption p {
-    color: #fff;
-    font-size: 20px;
+    color: #fbf348;
+    font-size: 27px;
 }
 
 h3.title-featured {
@@ -236,9 +248,10 @@ a.button-link:hover {
 }
 
 .title-new-funfact p {
-    font-size: 20px;
+    font-size: 23px;
     color: #000;
-    font-weight: 600;
+    font-weight: bold;
+    line-height: 10px;
 }
 
 img.img-fluid.img-contact {
@@ -249,7 +262,7 @@ img.img-fluid.img-contact {
 
 .title-contact h3 {
     font-size: 40px;
-    font-weight: 600;
+    font-weight: bold;
     text-transform: uppercase;
 }
 
@@ -325,6 +338,7 @@ button.btn.btn-large.btn-block.btn-primary:hover {
     position: absolute;
     justify-content: space-between;
     width: 100%;
+    padding-top: 20px;
 }
 
 .image-newest {
@@ -526,24 +540,29 @@ img.img-fluid.border-radius-0.img-news {
 }
 
 .title-new-funfact h1 {
-    font-size: 37px;
-    padding-right: 150px;
+    font-size: 43px;
     font-weight: bold;
-}
-
-img.img-news-funfact {
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
 }
 
 a.uk-position-center-left.uk-position-small.uk-hidden-hover.uk-icon.uk-slidenav-previous.uk-slidenav svg {
     color: #000;
     width: 20px;
+    transition: 0.2s;
 }
 
 a.uk-position-center-right.uk-position-small.uk-hidden-hover.uk-icon.uk-slidenav-next.uk-slidenav svg {
     color: #000;
+    width: 20px;
+    transition: 0.2s;
+}
+
+a.uk-position-center-left.uk-position-small.uk-hidden-hover.uk-icon.uk-slidenav-previous.uk-slidenav svg:hover {
+    color: #fbf348;
+    width: 20px;
+}
+
+a.uk-position-center-right.uk-position-small.uk-hidden-hover.uk-icon.uk-slidenav-next.uk-slidenav svg:hover {
+    color: #fbf348;
     width: 20px;
 }
 
@@ -667,6 +686,7 @@ nav.menu-display li {
 
 img.logo-planet {
     width: 100%;
+    padding-top: 25px;
 }
 
 input.search-home-hamburger {
@@ -725,6 +745,88 @@ html.side-header-hamburguer-sidebar #header.side-header .header-nav.header-nav-l
 }
 
 section.featured {
-    padding-top: 50px;
+    margin-top: 60px;
 }
 
+.uk-active img.img-news-funfact {
+    width: 85%;
+    height: 500px;
+    object-fit: cover;
+    margin-top: 0 !important;
+    transition: 0.5s;
+    margin-left: 135px;
+}
+  .img-news-funfact {
+    width: 80%;
+    height: 450px;
+    margin-top: 20px;
+  }
+
+  a.uk-position-center-right.uk-position-small.uk-hidden-hover.uk-icon.uk-slidenav-next.uk-slidenav {
+    position: absolute;
+    right: 22%;
+}
+
+a.uk-position-center-left.uk-position-small.uk-hidden-hover.uk-icon.uk-slidenav-previous.uk-slidenav {
+    position: absolute;
+    left: 10.5%;
+}
+
+a.uk-slidenav svg polyline {
+
+    stroke-width: 2.5;
+
+}
+
+.side-header-narrow-bar-bottom.d-flex.justify-content-center {
+    margin-top: -50px;
+}
+
+i.bi.bi-chevron-compact-down {
+    position: absolute;
+    color: #ededed;
+    right: 48%;
+    font-size: 70px;
+    top: 90%;
+    z-index: 111;
+    cursor: pointer;
+}
+
+html {
+    scroll-behavior: smooth !important;
+  }
+
+
+.hamburguer-btn.active .close span {
+    width: 50px;
+    transition: ease all 300ms;
+    height: 3px;
+}
+
+.carousel-indicators button.active {
+    background-color: #fbf348!important;
+    opacity: 100%;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.carousel-caption.d-none.d-md-block.content-slider-featured {
+    text-align: left;
+    padding-bottom: 85px;
+    margin-left: -100px;
+}
+
+img.img-doodle-1 {
+    position: absolute;
+    left: -6%;
+    width: 65%;
+    top: 135%;
+}
+
+img.doodle {
+    position: absolute;
+    right: 0;
+    width: 300px;
+    z-index: 999999999999999;
+    margin-top: -215px;
+}
