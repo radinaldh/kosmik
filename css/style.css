@@ -32,13 +32,15 @@ html.side-header-hamburguer-sidebar #header.side-header {
     border-radius: 0px;
 }
 
-  .hamburguer-btn .hamburguer span:nth-child(2) {
+.hamburguer-btn .hamburguer span:nth-child(2) {
     margin-top: 19px;
-  }
-  .hamburguer-btn .hamburguer span:nth-child(1) {
+}
+
+.hamburguer-btn .hamburguer span:nth-child(1) {
     margin-top: 17px;
-  }
-  .hamburguer-btn .hamburguer span:nth-child(3) {
+}
+
+.hamburguer-btn .hamburguer span:nth-child(3) {
     margin-top: 20px;
 }
 
@@ -271,6 +273,7 @@ img.img-fluid.img-contact {
     color: #000;
     font-weight: bold;
 }
+
 .information-contact h3 {
     font-size: 25px;
     font-weight: bold;
@@ -296,7 +299,7 @@ footer#footer {
     color: #fff !important;
     margin-left: 7px;
     line-height: 35px;
-  }
+}
 
 .list-sosial-media-footer ul li a {
     font-size: 20px;
@@ -529,7 +532,10 @@ img.img-fluid.border-radius-0.img-news {
     object-fit: cover;
 }
 
-.owl-carousel.nav-style-1 .owl-nav .owl-next:before, .owl-carousel.nav-style-1 .owl-nav .owl-next:after, .owl-carousel.nav-style-1 .owl-nav .owl-prev:before, .owl-carousel.nav-style-1 .owl-nav .owl-prev:after {
+.owl-carousel.nav-style-1 .owl-nav .owl-next:before,
+.owl-carousel.nav-style-1 .owl-nav .owl-next:after,
+.owl-carousel.nav-style-1 .owl-nav .owl-prev:before,
+.owl-carousel.nav-style-1 .owl-nav .owl-prev:after {
     font-size: 40px;
 }
 
@@ -548,11 +554,12 @@ img.img-fluid.border-radius-0.img-news {
     stroke-width: 3px;
 }
 
-#carouselExampleDark .carousel-control-prev{
+#carouselExampleDark .carousel-control-prev {
     left: unset !important;
 }
 
-#carouselExampleDark button:hover .uk-slidenav svg, .uk-position-small.uk-hidden-hover.uk-icon.uk-slidenav svg:hover {
+#carouselExampleDark button:hover .uk-slidenav svg,
+.uk-position-small.uk-hidden-hover.uk-icon.uk-slidenav svg:hover {
     color: #fbf348;
     width: 20px;
 }
@@ -591,6 +598,7 @@ section.py-5.section-our-team {
     position: relative;
     display: inline-block;
 }
+
 .our-team .img-top {
     display: none;
     position: absolute;
@@ -598,6 +606,7 @@ section.py-5.section-our-team {
     left: 0;
     z-index: 99;
 }
+
 .our-team:hover .img-top {
     display: inline;
 }
@@ -628,7 +637,7 @@ img.img-after-hover {
     color: #000;
 }
 
-.carousel-dark .carousel-indicators [data-bs-target]{
+.carousel-dark .carousel-indicators [data-bs-target] {
     background-color: #fbf348;
 }
 
@@ -707,17 +716,19 @@ html.side-header-hamburguer-sidebar #header.side-header .header-nav.header-nav-l
     line-height: 28px;
     width: 100%;
     text-align: center;
-    color: #fff!important;
+    color: #fff !important;
     text-decoration: none;
     font-size: 40px !important;
     margin: 10px;
 }
 
-.social-icons li:hover a{
+.social-icons li:hover a {
     background-color: transparent;
 }
 
-.bi-instagram:hover, .bi-facebook:hover, .bi-twitter:hover{
+.bi-instagram:hover,
+.bi-facebook:hover,
+.bi-twitter:hover {
     color: #fbf348;
 }
 
@@ -751,13 +762,14 @@ section.featured {
     transition: 0.5s;
     margin-left: 135px;
 }
-  .img-news-funfact {
+
+.img-news-funfact {
     width: 80%;
     height: 450px;
     margin-top: 20px;
-  }
+}
 
-  a.uk-position-center-right.uk-position-small.uk-hidden-hover.uk-icon.uk-slidenav-next.uk-slidenav {
+a.uk-position-center-right.uk-position-small.uk-hidden-hover.uk-icon.uk-slidenav-next.uk-slidenav {
     position: absolute;
     right: 22%;
 }
@@ -789,7 +801,7 @@ i.bi.bi-chevron-compact-down {
 
 html {
     scroll-behavior: smooth !important;
-  }
+}
 
 
 .hamburguer-btn.active .close span {
@@ -800,7 +812,7 @@ html {
 }
 
 .carousel-indicators button.active {
-    background-color: #fbf348!important;
+    background-color: #fbf348 !important;
     opacity: 100%;
     margin-left: 3px;
     margin-right: 3px;
@@ -836,15 +848,15 @@ img.doodle {
     height: 4px;
     transition: ease width 300ms;
     border-radius: 0px;
-  }
-  
-  .hamburguer-btn.hamburguer-btn-sticky-dark {
+}
+
+.hamburguer-btn.hamburguer-btn-sticky-dark {
     transform: rotate(90deg);
     width: 5em;
     height: 5em;
-  }
+}
 
-  img.logo-footer {
+img.logo-footer {
     margin-left: -25px;
 }
 
@@ -855,7 +867,15 @@ img.doodle {
     font-size: 14px;
 }
 
+#footer a {
+    transition: 1s !important
+}
+
+#footer a:hover {
+    color: #FBF348 !important;
+}
+
 .side-header .header-body {
     max-width: 94.4vw;
     position: relative;
-  }
+}
