@@ -875,6 +875,10 @@ img.logo-footer {
     color: #FBF348 !important;
 }
 
+html .scroll-to-top:hover {
+    color: #fbf348  !important;
+  }
+
 .side-header .header-body {
     max-width: 94.4vw;
     position: relative;
