@@ -724,14 +724,18 @@ html.side-header-hamburguer-sidebar #header.side-header .header-nav.header-nav-l
     color: #fbf348;
 }
 
-.header-row.justify-content-end.pb-3.social-hamburger p {
+.social-hamburger p {
     font-size: 22px;
     color: #fff;
     padding-right: 20px;
 }
 
-.header-row.justify-content-end.pb-3.social-hamburger {
+.social-hamburger {
     align-items: end !important;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 15px;
 }
 
 .slider-container.rev_slider_wrapper.fullscreen-slider {
@@ -853,3 +857,8 @@ img.doodle {
     padding: 0px 10px;
     font-size: 14px;
 }
+
+.side-header .header-body {
+    max-width: 94.4vw;
+    position: relative;
+  }
