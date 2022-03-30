@@ -875,6 +875,10 @@ img.logo-footer {
     color: #FBF348 !important;
 }
 
+html .scroll-to-top {
+    color: #fff  !important;
+  }
+
 html .scroll-to-top:hover {
     color: #fbf348  !important;
   }
