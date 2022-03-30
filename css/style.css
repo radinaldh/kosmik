@@ -125,7 +125,7 @@ nav.menu-display a:hover {
 }
 
 img.d-block.w-100.img-featured {
-    height: 850px;
+    height: 750px;
     object-fit: cover;
 }
 
@@ -538,24 +538,21 @@ img.img-fluid.border-radius-0.img-news {
     font-weight: bold;
 }
 
-a.uk-position-center-left.uk-position-small.uk-hidden-hover.uk-icon.uk-slidenav-previous.uk-slidenav svg {
+.uk-position-small.uk-hidden-hover.uk-icon.uk-slidenav svg {
     color: #000;
     width: 20px;
     transition: 0.2s;
 }
 
-a.uk-position-center-right.uk-position-small.uk-hidden-hover.uk-icon.uk-slidenav-next.uk-slidenav svg {
-    color: #000;
-    width: 20px;
-    transition: 0.2s;
+#carouselExampleDark .uk-slidenav svg polyline {
+    stroke-width: 3px;
 }
 
-a.uk-position-center-left.uk-position-small.uk-hidden-hover.uk-icon.uk-slidenav-previous.uk-slidenav svg:hover {
-    color: #fbf348;
-    width: 20px;
+#carouselExampleDark .carousel-control-prev{
+    left: unset !important;
 }
 
-a.uk-position-center-right.uk-position-small.uk-hidden-hover.uk-icon.uk-slidenav-next.uk-slidenav svg:hover {
+#carouselExampleDark button:hover .uk-slidenav svg, .uk-position-small.uk-hidden-hover.uk-icon.uk-slidenav svg:hover {
     color: #fbf348;
     width: 20px;
 }
