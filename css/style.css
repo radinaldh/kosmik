@@ -406,38 +406,38 @@ button.btn.btn-large.btn-block.btn-primary:hover {
 /* Page About */
 
 
-.title-page-about h3 {
-    font-size: 40px;
-    font-weight: 600;
-    color: #fff;
+.title-page-about * {
+    color: #fff !important;
 }
 
 .content-desc-about p {
-    font-size: 25px;
-    line-height: 35px;
+    font-size: 1.5vw;
+    line-height: 1.3em;
     color: #fff;
-}
-
-.title-our-service h3 {
-    font-size: 40px;
-    font-weight: 600;
+    font-weight: bold;
 }
 
 .list-services ul li {
-    font-size: 23px;
-    margin-top: 13px;
+    font-size: 2vw;
+    line-height: 1.5vw;
+    list-style-type: square;
+  }
+
+.title-our-service * {
+    margin-bottom: 0;
 }
+
+.list-services ul li span {
+    font-size: 1.5vw;
+    left: -10px;
+    position: relative;
+  }
 
 img.img-fluid.img-our-service-about {
     width: 100%;
     height: 500px;
     object-fit: cover;
     margin-top: 50px;
-}
-
-.title-our-team h3 {
-    font-size: 40px;
-    font-weight: 600;
 }
 
 .image-team {
@@ -481,6 +481,12 @@ img.img-overlay-team {
 .detail-team p {
     font-size: 18px;
 }
+
+.timeline {
+    height: auto;
+    overflow-y: scroll;
+    max-height: 90%;
+  }
 
 .timeline img {
     width: 100%;
@@ -824,22 +830,35 @@ html {
     margin-left: -100px;
 }
 
-img.img-doodle-1 {
+.img-doodle-1 {
     position: absolute;
     left: -6%;
     width: 65%;
     top: 135%;
 }
 
-img.doodle {
+.doodle {
     position: absolute;
-    right: 0;
-    width: 300px;
     z-index: 999;
-    margin-top: -215px;
 }
 
+.doodle.doodle-contact {
+    width: 300px;
+    margin-top: -215px;
+    right: 0;
+}
 
+.doodle.doodle-about {
+    left: 0;
+    margin-left: -100px;
+    top: 130px;
+}
+
+.doodle.doodle-timeline {
+    margin-left: -75px;
+    bottom: 0;
+    width: 80%;
+  }
 
 .hamburguer-btn .hamburguer span {
     position: absolute;
@@ -876,18 +895,49 @@ img.logo-footer {
 }
 
 html .scroll-to-top {
-    color: #fff  !important;
-  }
+    color: #fff !important;
+}
 
 html .scroll-to-top:hover {
-    color: #fbf348  !important;
-  }
+    color: #fbf348 !important;
+}
 
 .side-header .header-body {
     max-width: 94.4vw;
     position: relative;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    color:rgba(0, 0, 0, 0.9) !important;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: rgba(0, 0, 0, 0.9) !important;
+}
+
+.title-section * {
+    font-weight: bold !important;
+    text-transform: uppercase;
+}
+
+.content-desc {
+    font-size: 1.5vw;
+}
+
+.grey-desc {
+    color: #4d4d4d !important;
+}
+
+.team-img-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.uk-slider-items li:hover .team-img-hover {
+    opacity: 1 !important;
+    cursor: pointer;
 }
