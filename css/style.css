@@ -941,3 +941,35 @@ h6 {
     opacity: 1 !important;
     cursor: pointer;
 }
+
+.modal-backdrop {
+    display: none;
+  }
+
+  .modal .close {
+    position: absolute;
+    right: 0;
+    padding: 15px;
+  }
+
+  .modal .close span{
+    color: #000;
+  }
+
+  .modal-dialog {
+    width: auto !important;
+    max-width: 40% !important;
+  }
+
+  .modal-header {
+    border-bottom: none !important;
+  }
+
+  .modal-footer {
+    border-top: none !important;
+  }
+
+  .modal-content {
+      border-radius: 0 !important;
+      background-color: rgb(251, 243, 72) !important;
+  }
