@@ -421,7 +421,7 @@ button.btn.btn-large.btn-block.btn-primary:hover {
     font-size: 2vw;
     line-height: 1.5vw;
     list-style-type: square;
-  }
+}
 
 .title-our-service * {
     margin-bottom: 0;
@@ -431,7 +431,7 @@ button.btn.btn-large.btn-block.btn-primary:hover {
     font-size: 1.5vw;
     left: -10px;
     position: relative;
-  }
+}
 
 img.img-fluid.img-our-service-about {
     width: 100%;
@@ -486,7 +486,7 @@ img.img-overlay-team {
     height: auto;
     overflow-y: scroll;
     max-height: 90%;
-  }
+}
 
 .timeline img {
     width: 100%;
@@ -858,7 +858,7 @@ html {
     margin-left: -75px;
     bottom: 0;
     width: 80%;
-  }
+}
 
 .hamburguer-btn .hamburguer span {
     position: absolute;
@@ -942,34 +942,40 @@ h6 {
     cursor: pointer;
 }
 
-.modal-backdrop {
+/* .modal-backdrop {
     display: none;
-  }
+} */
 
-  .modal .close {
+.modal .close {
     position: absolute;
     right: 0;
     padding: 15px;
-  }
+}
 
-  .modal .close span{
+.modal .close span {
     color: #000;
-  }
+}
 
-  .modal-dialog {
+.modal-dialog {
     width: auto !important;
     max-width: 40% !important;
-  }
+    margin: auto !important;
+    top: 25%
+}
 
-  .modal-header {
+.modal-header {
     border-bottom: none !important;
-  }
+}
 
-  .modal-footer {
+.modal-footer {
     border-top: none !important;
-  }
+}
 
-  .modal-content {
-      border-radius: 0 !important;
-      background-color: rgb(251, 243, 72) !important;
-  }
+.modal-content {
+    border-radius: 0 !important;
+    background-color: rgb(251, 243, 72) !important;
+}
+
+.uk-transition-toggle {
+    margin: 2.5px !important;
+}
