@@ -253,6 +253,14 @@
                             <img src="img/slider-kosmik.jpg" alt="" data-bgposition="center center" data-bgfit="cover"
                                 data-bgrepeat="no-repeat" class="rev-slidebg">
                         </li>
+                        <li class="slide">
+                            <img src="img/slider-kosmik-2.jpg" alt="" data-bgposition="center center" data-bgfit="cover"
+                                data-bgrepeat="no-repeat" class="rev-slidebg">
+                        </li>
+                        <li class="slide">
+                            <img src="img/slider-kosmik-3.jpg" alt="" data-bgposition="center center" data-bgfit="cover"
+                                data-bgrepeat="no-repeat" class="rev-slidebg">
+                        </li>
                     </ul>
                 </div>
                 <div class="arrow-banner">
@@ -617,48 +625,10 @@
         data-cf-beacon='{"rayId":"6ecaf4b99cac4727","version":"2021.12.0","r":1,"token":"03fa3b9eb60b49789931c4694c153f9b","si":100}'
         crossorigin="anonymous"></script>
 
-    <script>
-        var slideIndex = 0;
-        showSlides();
-
-        function showSlides() {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) {
-                slideIndex = 1
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-            setTimeout(showSlides, 2000); // Change image every 2 seconds
-        }
-    </script>
-
-    <script>
-        $(document).ready(function () {
-            $('ul li a').click(function () {
-                $('li a').removeClass("active");
-                $(this).addClass("active");
-            });
-        });
-        $(document).ready(function () {
-            $('ul li a').click(function () {
-                $('li a').removeClass("active");
-                $(this).addClass("active");
-            });
-        });
-    </script>
-
     <!-- UIkit JS -->
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.13.1/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.13.1/dist/js/uikit-icons.min.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
 

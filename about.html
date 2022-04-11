@@ -317,23 +317,41 @@
         </div>
 
 
-        <section class="py-5">
+        <section class="py-5 section-timeline">
             <div class="container-fluid">
-                <div class="row">
+                <div class="row" style="max-height: 97vh">
                     <div class="col-lg-3">
                         <img src="img/doodle-cimeng.png" alt="" srcset="" class="doodle doodle-timeline">
                         <div class="title-section">
                             <h1>TIMELINE</h1>
                         </div>
                         <div class="content-desc">
-                            <p>KOSMIK lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam</p>
+                            <p>
+                                KOSMIK lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                            </p>
                         </div>
 
                     </div>
-                    <div class="col-lg-9">
-                        <div class="timeline">
+                    <div class="col-lg-8">
+
+                        <div class="timeline" id="timeline">
                             <img src="img/timeline.jpg" alt="" srcset="">
                         </div>
+
+                    </div>
+                    <div class="col-lg-1">
+
+                        <div class="button-scroll-wrapper">
+                            <div class="button-wrap">                                
+                            <button class="btn" onclick="scrollUp()">
+                                <span class="glyphicon glyphicon-triangle-top"></span>
+                            </button>
+                            <button class="btn" onclick="scrollDown()">
+                                <span class="glyphicon glyphicon-triangle-bottom"></span>
+                            </button>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -563,48 +581,10 @@
         data-cf-beacon='{"rayId":"6ecaf4b99cac4727","version":"2021.12.0","r":1,"token":"03fa3b9eb60b49789931c4694c153f9b","si":100}'
         crossorigin="anonymous"></script>
 
-    <script>
-        var slideIndex = 0;
-        showSlides();
-
-        function showSlides() {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) {
-                slideIndex = 1
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-            setTimeout(showSlides, 2000); // Change image every 2 seconds
-        }
-    </script>
-
-    <script>
-        $(document).ready(function () {
-            $('ul li a').click(function () {
-                $('li a').removeClass("active");
-                $(this).addClass("active");
-            });
-        });
-        $(document).ready(function () {
-            $('ul li a').click(function () {
-                $('li a').removeClass("active");
-                $(this).addClass("active");
-            });
-        });
-    </script>
-
     <!-- UIkit JS -->
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.13.1/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.13.1/dist/js/uikit-icons.min.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
 
