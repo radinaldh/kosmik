@@ -3,7 +3,7 @@
 }
 
 .side-header-narrow-bar-logo.bg-color-primary.d-flex.justify-content-center {
-    background-color: #000000 !important;
+    background-color: #000 !important;
 }
 
 html.side-header-hamburguer-sidebar #header.side-header {
@@ -15,7 +15,7 @@ html.side-header-hamburguer-sidebar #header.side-header {
 }
 
 .side-header-narrow-bar-content.d-flex.align-items-center.text-center.h-100 {
-    background-color: #000000 !important;
+    background-color: #000 !important;
 }
 
 .hamburguer-btn .close span {
@@ -114,10 +114,10 @@ nav.menu-display li {
 nav.menu-display a {
     color: #fff;
     padding: 20px;
-    font-size: 23px;
+    font-size: 24px;
     text-transform: uppercase;
     font-weight: 400;
-    transition: 0.2s;
+    transition: 0.5s;
 }
 
 nav.menu-display a:hover {
@@ -147,7 +147,7 @@ img.d-block.w-100.img-featured {
 } */
 
 .carousel-caption h1 {
-    color: #fff;
+    color: #fff !important;
     font-size: 75px;
     font-weight: bold;
     text-transform: uppercase;
@@ -213,7 +213,7 @@ a.button-link:hover {
 
 .content-about p {
     line-height: 35px;
-    color: #000;
+    color: #4d4d4d;
     font-weight: bold;
 }
 
@@ -285,11 +285,11 @@ img.img-fluid.img-contact {
 }
 
 footer#footer {
-    background: #000000;
+    background: #111;
 }
 
 .footer-copyright.footer-copyright-style-2.pt-4.pb-5 {
-    background: #000000 !important;
+    background: #111 !important;
 }
 
 
@@ -886,4 +886,8 @@ html .scroll-to-top:hover {
 .side-header .header-body {
     max-width: 94.4vw;
     position: relative;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color:rgba(0, 0, 0, 0.9) !important;
 }
