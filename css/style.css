@@ -1020,10 +1020,6 @@ h6 {
     color: #000
 }
 
-body {
-    font-family: Poppins, sans-serif !important
-}
-
 .reveal {
     /* position: relative; */
     /* transform: translateY(150px); */
@@ -1082,4 +1078,8 @@ body {
         transform: translateX(0);
         opacity: 1;
     }
+}
+
+body {
+    font-family: Poppins, sans-serif !important;
 }

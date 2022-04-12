@@ -2,7 +2,7 @@
 * Demo Fonts
 */
 body {
-    font-family: "Poppins", sans-serif;
+    font-family: Poppins, sans-serif !important;
 }
 
 @media (min-width: 1240px) {
@@ -699,7 +699,7 @@ html.sticky-header-active #header.header-transparent .header-body:not(.header-bo
 }
 
 .testimonial.testimonial-style-3.custom-testimonial-style-1 blockquote p {
-    font-family: "Poppins", sans-serif;
+    font-family: Poppins, sans-serif !important;
 }
 
 .testimonial.testimonial-style-3.custom-testimonial-style-1 .testimonial-author {

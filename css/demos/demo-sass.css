@@ -4,7 +4,7 @@ body {
 }
 
 .custom-secondary-font {
-    font-family: "Poppins", sans-serif;
+    font-family: Poppins, sans-serif !important;
 }
 
 .custom-box-shadow-1 {

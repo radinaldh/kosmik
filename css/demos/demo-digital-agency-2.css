@@ -1,5 +1,5 @@
 body {
-    font-family: "Poppins", sans-serif;
+    font-family: Poppins, sans-serif !important;
 }
 
 @media (min-height: 1200px) {

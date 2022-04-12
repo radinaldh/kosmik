@@ -5055,7 +5055,7 @@ html[dir=rtl] #header .tip-light:before {
     }
 
     html.side-header-hamburguer-sidebar #header.side-header .header-nav.header-nav-links .header-nav-main.header-nav-main-mobile-dark nav>ul>li>a.active {
-        color: #08c !important
+        color: #08c 
     }
 
     html.side-header-hamburguer-sidebar #header.side-header .header-nav.header-nav-links nav::-webkit-scrollbar-thumb {
@@ -5063,11 +5063,11 @@ html[dir=rtl] #header .tip-light:before {
     }
 
     html.side-header-hamburguer-sidebar #header.side-header .header-nav.header-nav-links nav>ul>li>a.active {
-        color: #08c !important
+        color: #08c
     }
 
     html.side-header-hamburguer-sidebar #header.side-header .header-nav.header-nav-links nav>ul>li:hover>a {
-        color: #08c !important
+        color: #08c 
     }
 }
 

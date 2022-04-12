@@ -3,7 +3,7 @@
 }
 
 body {
-    font-family: "Poppins", sans-serif;
+    font-family: Poppins, sans-serif !important;
 }
 
 .body {
@@ -367,7 +367,7 @@ body {
     top: -5px;
     left: -5px;
     font-size: 90px;
-    font-family: "Poppins", sans-serif;
+    font-family: Poppins, sans-serif !important;
 }
 
 .testimonial.custom-testimonial-style-1.testimonial-style-4 .testimonial-author {

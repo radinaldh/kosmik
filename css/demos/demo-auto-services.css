@@ -1,5 +1,5 @@
 body {
-    font-family: "Poppins", sans-serif;
+    font-family: Poppins, sans-serif !important;
 }
 
 @media (min-width: 1200px) {
@@ -346,7 +346,7 @@ body {
 }
 
 .custom-testimonial-style-1 blockquote p {
-    font-family: "Poppins", sans-serif;
+    font-family: Poppins, sans-serif !important;
 }
 
 .custom-testimonial-style-1.testimonial-with-quotes blockquote:before {

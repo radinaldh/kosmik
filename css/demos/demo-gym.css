@@ -1,5 +1,5 @@
 body {
-    font-family: "Poppins", sans-serif;
+    font-family: Poppins, sans-serif !important;
 }
 
 h2 {
@@ -550,7 +550,7 @@ h4 {
 }
 
 .custom-testimonial-style-1 blockquote p {
-    font-family: "Poppins", sans-serif;
+    font-family: Poppins, sans-serif !important;
     font-size: 17px;
     font-weight: 300;
     font-style: normal;

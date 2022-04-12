@@ -1,6 +1,6 @@
 @charset "UTF-8";
 body {
-    font-family: "Poppins", sans-serif;
+    font-family: Poppins, sans-serif !important;
 }
 
 @media (min-width: 1200px) {
