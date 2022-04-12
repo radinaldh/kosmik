@@ -16,16 +16,18 @@
     <meta name="author" content="okler.net">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="favicon.png">
 
     <!-- Mobile Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
 
     <!-- Web Fonts  -->
-    <link id="googleFonts"
-        href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800%7CShadows+Into+Light&amp;display=swap"
-        rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 
     <!-- Vendor CSS -->
     <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
@@ -55,16 +57,23 @@
     <!-- Theme Custom CSS -->
     <link rel="stylesheet" href="css/custom.css">
 
-    <!-- Style css -->
-    <link rel="stylesheet" href="css/style.css">
-
-    <!-- Responsive css -->
+    <!-- Responsive CSS -->
     <link rel="stylesheet" href="css/responsive.css">
 
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.13.1/dist/css/uikit.min.css" />
+
+    <!-- icon bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 
     <!-- Head Libs -->
     <script src="vendor/modernizr/modernizr.min.js"></script>
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
@@ -73,7 +82,7 @@
         <div class="side-header-narrow-bar desktop">
             <div class="side-header-narrow-bar-logo bg-color-primary d-flex justify-content-center">
                 <a href="index.html" class="p-3 mb-4 mt-2">
-                    <img alt="Porto" width="40" height="40" src="img/logo-planet.png">
+                    <img alt="Porto" width="40" height="40" src="img/logo-planet.png" class="logo-planet">
                 </a>
             </div>
             <div class="side-header-narrow-bar-content d-flex align-items-center text-center h-100">
@@ -94,7 +103,44 @@
                 </div>
             </div>
         </div>
-        <header class="header-display">
+        <header id="header" class="header-effect-shrink mobile"
+            data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyChangeLogo': true, 'stickyStartAt': 30, 'stickyHeaderContainerHeight': 70}"
+            style="height: 101px; top: 0 !important;">
+            <div class="header-body border-top-0">
+                <div class="header-container container-fluid px-lg-4" style="height: 100px;">
+                    <div class="header-row">
+                        <div class="header-column">
+                            <div class="header-row">
+                                <div class="header-logo" style="width: 100px; height: 48px;">
+                                    <a href="index.html">
+                                        <img alt="Kosmik" data-sticky-width="82" data-sticky-height="40"
+                                            src="img/logo-kosmik.png" width="100" height="48">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-column justify-content-end">
+                            <div class="header-row">
+                                <button class="hamburguer-btn hamburguer-btn-sticky-dark">
+                                    <span class="hamburguer">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </span>
+                                    <span class="close">
+                                        <span></span>
+                                        <span></span>
+                                    </span>
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+        <header class="header-display desktop dark">
             <div class="header-row flex-row justify-content-center py-3">
                 <div class="header-logo-display d-flex">
                     <a href="index.html">
@@ -106,7 +152,7 @@
                                 <a href="about.html" class="menu">About</a>
                             </li>
                             <li>
-                                <a href="#" class="menu">Catalog</a>
+                                <a href="catalog.html" class="menu">Catalog</a>
                             </li>
                             <li>
                                 <a href="#" class="menu">News</a>
@@ -114,14 +160,11 @@
                             <li>
                                 <a href="#" class="menu">Contact</a>
                             </li>
-                            <li>
-                                <form action="/action_page.php" class="search-menu">
-                                    <input type="text" class="search-home" placeholder="What are you looking for?"
-                                        name="search">
-                                    <button type="submit" class="button-search-home"><i
-                                            class="fa fa-search"></i></button>
-                                </form>
-                            </li>
+                            <form action="/action_page.php" class="search-menu">
+                                <input type="text" class="search-home" placeholder="What are you looking for?"
+                                    name="search">
+                                <button type="submit" class="button-search-home"><i class="fa fa-search"></i></button>
+                            </form>
                         </ul>
                     </nav>
                 </div>
@@ -132,9 +175,10 @@
                 <div class="header-container container d-flex h-100">
                     <div class="header-column flex-column justify-content-center h-100">
                         <div class="header-row flex-row justify-content-center py-5">
-                            <div class="header-logo">
+                            <div class="header-logo desktop">
                                 <a href="index.html">
-                                    <img alt="Porto" width="100" height="48" src="img/logo-kosmik.png">
+                                    <img alt="Porto" width="100" height="48" src="img/logo-kosmik.png"
+                                        class="logo-menu-side">
                                 </a>
                             </div>
                         </div>
@@ -147,9 +191,9 @@
                                         <ul class="nav nav-pills" id="mainNav">
                                             <li>
                                                 <form action="/action_page.php" class="search-menu">
-                                                    <input type="text" class="search-home"
+                                                    <input type="text" class="search-home-hamburger"
                                                         placeholder="What are you looking for?" name="search">
-                                                    <button type="submit" class="button-search-home"><i
+                                                    <button type="submit" class="button-search-home-hamburger"><i
                                                             class="fa fa-search"></i></button>
                                                 </form>
                                             </li>
@@ -157,7 +201,7 @@
                                                 <a href="about.html">About</a>
                                             </li>
                                             <li>
-                                                <a href="#">Catalog</a>
+                                                <a href="catalog.html">Catalog</a>
                                             </li>
                                             <li>
                                                 <a href="#">News</a>
@@ -170,82 +214,177 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="header-row justify-content-end pb-3">
-                            <ul class="header-social-icons social-icons social-icons-clean">
-                                <li class="social-icons-facebook"><a href="https://www.facebook.com/" target="_blank"
-                                        title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
-                                <li class="social-icons-twitter"><a href="https://www.twitter.com/" target="_blank"
-                                        title="Twitter"><i class="fab fa-twitter"></i></a></li>
-                                <li class="social-icons-linkedin"><a href="https://www.linkedin.com/" target="_blank"
-                                        title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
-                            </ul>
-                        </div>
+
                     </div>
                 </div>
-            </div>
-        </header>
-        <!-- //// -->
-
-        <section class="catalog">
-            <div class="container-fluid">
-                <div class="menu-catalog-active">
-                    <ul>
-                        <li>
-                            <a href="/" class="menu-catalog catalog-active">PUBLISHED TITLES</a>
-                        </li>
-                        <li>
-                            <a href="#" class="menu-catalog">PILOT TITLES</a>
-                        </li>
+                <div class="header-row justify-content-end pb-3 social-hamburger">
+                    <p>Follow us on</p>
+                    <ul class="header-social-icons social-icons social-icons-clean">
+                        <li><a href="https://www.facebook.com/" target="_blank" title="Facebook"><i
+                                    class="bi bi-instagram"></i></a></li>
+                        <li><a href="https://www.twitter.com/" target="_blank" title="Twitter"><i
+                                    class="bi bi-facebook"></i></a></li>
+                        <li><a href="https://www.linkedin.com/" target="_blank" title="Linkedin"><i
+                                    class="bi bi-twitter"></i>
+                            </a></li>
                     </ul>
                 </div>
             </div>
-        </section>
+        </header>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        <main id="main" class="main">
+            <section class="py-3 first-section-about" style="margin-bottom: -4vw !important">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="tabs">
+                                <ul class="nav nav-tabs">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="#published" data-bs-toggle="tab">Published Titles</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#pilot" data-bs-toggle="tab">Pilot Titles</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div id="published" class="tab-pane active">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="my-5 col-lg-12 col-yellow">
+                                                    <div class="catalog-item-wrap">
+                                                        <span class="catalog-title">CODE<br>HELIX</span>
+                                                        <span class="catalog-author">by Nikki Dibya Wardhana,<br>Bryan Arfiandy</span>
+                                                        <button class="btn btn-black" type="button">More Info <span
+                                                                class="glyphicon glyphicon-play"></span></button>
+                                                    </div>
+                                                    <div class="catalog-img-wrap">
+                                                        <img src="img/catalog-2.png">
+                                                    </div>
+                                                </div>
+                                                <div class="my-5 col-lg-12 col-yellow">
+                                                    <div class="catalog-item-wrap">
+                                                        <span class="catalog-title">LOREM<br>IPSUM DOLOR</span>
+                                                        <span class="catalog-author">by Lorem Ipsum</span>
+                                                        <button class="btn btn-black" type="button">More Info <span
+                                                                class="glyphicon glyphicon-play"></span></button>
+                                                    </div>
+                                                    <div class="catalog-img-wrap">
+                                                        <img src="img/catalog-1.png">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="pilot" class="tab-pane">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-lg-3">
+                                                    <div class="pilot-post col-yellow">                                                        
+                                                    <img src="img/pilot-2.png">
+                                                    </div>
+                                                    <div class="pilot-title-wrap">
+                                                        <p class="title">lorem ipsum</p>
+                                                        <p class="author">by lorem </p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <div class="pilot-post col-yellow">                                                        
+                                                    <img src="img/pilot-2.png">
+                                                    </div>
+                                                    <div class="pilot-title-wrap">
+                                                        <p class="title">lorem ipsum</p>
+                                                        <p class="author">by lorem </p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <div class="pilot-post col-yellow">                                                        
+                                                    <img src="img/pilot-2.png">
+                                                    </div>
+                                                    <div class="pilot-title-wrap">
+                                                        <p class="title">lorem ipsum</p>
+                                                        <p class="author">by lorem </p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <div class="pilot-post col-yellow">                                                        
+                                                    <img src="img/pilot-2.png">
+                                                    </div>
+                                                    <div class="pilot-title-wrap">
+                                                        <p class="title">lorem ipsum</p>
+                                                        <p class="author">by lorem </p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <div class="pilot-post col-yellow">                                                        
+                                                    <img src="img/pilot-2.png">
+                                                    </div>
+                                                    <div class="pilot-title-wrap">
+                                                        <p class="title">lorem ipsum</p>
+                                                        <p class="author">by lorem </p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <div class="pilot-post col-yellow">                                                        
+                                                    <img src="img/pilot-2.png">
+                                                    </div>
+                                                    <div class="pilot-title-wrap">
+                                                        <p class="title">lorem ipsum</p>
+                                                        <p class="author">by lorem </p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <div class="pilot-post col-yellow">                                                        
+                                                    <img src="img/pilot-2.png">
+                                                    </div>
+                                                    <div class="pilot-title-wrap">
+                                                        <p class="title">lorem ipsum</p>
+                                                        <p class="author">by lorem </p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <div class="pilot-post col-yellow">                                                        
+                                                    <img src="img/pilot-2.png">
+                                                    </div>
+                                                    <div class="pilot-title-wrap">
+                                                        <p class="title">lorem ipsum</p>
+                                                        <p class="author">by lorem </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
 
         <footer id="footer" class="footer-texts-more-lighten">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-6 col-lg-3 mb-5 mb-lg-0 list-logo-footer">
-                        <img src="img/logo-kosmik.png" alt="" srcset="">
+                    <div class="col-lg-12">
+                        <img src="img/logo-kosmik-footer.png" class="logo-footer" alt="" srcset="">\
+                    </div>
+                    <div class="col-md-6 col-lg-2 col-xs-6 mb-5 mb-lg-0 list-logo-footer">
+
                         <ul class="list list-unstyled mb-0">
-                            <li class="mb-0"><a href="#">About</a></li>
-                            <li class="mb-0"><a href="#">Catalog</a></li>
+                            <li class="mb-0"><a href="about.html">About</a></li>
+                            <li class="mb-0"><a href="catalog.html">Catalog</a></li>
                             <li class="mb-0"><a href="#">News</a></li>
                             <li class="mb-0"><a href="#">Contact</a></li>
                         </ul>
                     </div>
-                    <div class="col-md-6 col-lg-4 mb-5 mb-md-0 list-sosial-media-footer">
+                    <div class="col-md-6 col-lg-2 col-xs-6 mb-5 mb-md-0 list-sosial-media-footer">
                         <ul class="list list-unstyled mb-0">
                             <li class="mb-0"><a href="#">Instagram</a></li>
                             <li class="mb-0"><a href="#">Facebook</a></li>
                             <li class="mb-0"><a href="#">Twitter</a></li>
                         </ul>
+                    </div>
+                    <div class="col-md-4">
+
                     </div>
                     <div class="col-md-6 col-lg-3 list-bussiness-footer">
                         <h6>Bussiness :</h6>
@@ -268,11 +407,11 @@
 
 
     <!-- Vendor -->
-    <script data-cfasync="false" src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/jquery.appear/jquery.appear.min.js"></script>
     <script src="vendor/jquery.easing/jquery.easing.min.js"></script>
     <script src="vendor/jquery.cookie/jquery.cookie.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="vendor/jquery.validation/jquery.validate.min.js"></script>
     <script src="vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js"></script>
@@ -299,64 +438,10 @@
     <!-- Theme Initialization Files -->
     <script src="js/theme.init.js"></script>
 
-    <script defer
-        src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194"
-        integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw=="
-        data-cf-beacon='{"rayId":"6ecaf4b99cac4727","version":"2021.12.0","r":1,"token":"03fa3b9eb60b49789931c4694c153f9b","si":100}'
-        crossorigin="anonymous"></script>
-
-    <script>
-        var slideIndex = 0;
-        showSlides();
-
-        function showSlides() {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) { slideIndex = 1 }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-            setTimeout(showSlides, 2000); // Change image every 2 seconds
-        }
-    </script>
-
-    <script>
-        $(document).ready(function () {
-            $('ul li a').click(function () {
-                $('li a').removeClass("active");
-                $(this).addClass("active");
-            });
-        });
-        $(document).ready(function () {
-            $('ul li a').click(function () {
-                $('li a').removeClass("active");
-                $(this).addClass("active");
-            });
-        });
-    </script>
-
-
-    <script>
-        $(document).ready(function () {
-            $('ul li a').click(function () {
-                $('li a').removeClass("catalog-active");
-                $(this).addClass("catalog-active");
-            });
-        });
-        $(document).ready(function () {
-            $('ul li a').click(function () {
-                $('li a').removeClass("catalog-active");
-                $(this).addClass("catalog-active");
-            });
-        });
-    </script>
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.13.1/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.13.1/dist/js/uikit-icons.min.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
 

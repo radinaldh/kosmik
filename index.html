@@ -152,7 +152,7 @@
                                 <a href="about.html" class="menu">About</a>
                             </li>
                             <li>
-                                <a href="#" class="menu">Catalog</a>
+                                <a href="catalog.html" class="menu">Catalog</a>
                             </li>
                             <li>
                                 <a href="#" class="menu">News</a>
@@ -201,7 +201,7 @@
                                                 <a href="about.html">About</a>
                                             </li>
                                             <li>
-                                                <a href="#">Catalog</a>
+                                                <a href="catalog.html">Catalog</a>
                                             </li>
                                             <li>
                                                 <a href="#">News</a>
@@ -252,7 +252,7 @@
                     </ul>
                 </div>
                 <div class="arrow-banner">
-                    <a href="#featured">
+                    <a class="arrow-scroll-down" href="#featured">
                         <i class="bi bi-chevron-compact-down"></i>
                     </a>
                 </div>
@@ -263,11 +263,11 @@
                     <div class="row">
                         <div class="col-lg-12 reveal fade-left">
                             <img src="img/doodle-kosmik-1.png" alt="" class="img-doodle-1 reveal fade-left">
-                            <h5 class="tag-featured">
+                            <h4 class="tag-featured">
                                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda itaque doloremque
                                 aut officiis magni, autem architecto libero mollitia. Necessitatibus velit doloribus
                                 facere quam sed accusantium amet doloremque beatae itaque debitis?
-                            </h5>
+                            </h4>
                         </div>
                         <div class="col-lg-2">
                             <h3 class="title-featured reveal fade-left">Featured titles</h3>
@@ -332,8 +332,10 @@
                             <div class="container-newest">
                                 <img src="img/newest-1.jpg" alt="Avatar" class="image-newest">
                                 <div class="overlay-newest">
-                                    <div class="judul-karya-newest">Fluffy Tummy</div>
-                                    <p class="kreator-karya-newest">By Bima Eko Saputra, Yachi_chan</p>
+                                    <div class="newest-ovr-wrap">
+                                        <div class="judul-karya-newest">Fluffy Tummy</div>
+                                        <p class="kreator-karya-newest">By Bima Eko Saputra, Yachi_chan</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -341,8 +343,10 @@
                             <div class="container-newest">
                                 <img src="img/newest-2.jpg" alt="Avatar" class="image-newest">
                                 <div class="overlay-newest">
-                                    <div class="judul-karya-newest">Fluffy Tummy</div>
-                                    <p class="kreator-karya-newest">By Bima Eko Saputra, Yachi_chan</p>
+                                    <div class="newest-ovr-wrap">
+                                        <div class="judul-karya-newest">Fluffy Tummy</div>
+                                        <p class="kreator-karya-newest">By Bima Eko Saputra, Yachi_chan</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -388,8 +392,9 @@
                                     Accusantium vero dolorum odit dolore tempore.</p>
                             </div>
                             <div class="span9 btn-block">
-                                <button class="btn btn-large btn-block btn-primary" type="button">More Info <span
-                                        class="glyphicon glyphicon-play"></span></button>
+                                <a href="about.html">
+                                    <button class="btn btn-large btn-block btn-primary" type="button">More Info <span
+                                            class="glyphicon glyphicon-play"></span></button></a>
                             </div>
 
                         </div>
@@ -416,10 +421,10 @@
                                 <p style="text-transform: uppercase;">Funfact</p>
                                 <p style="font-size: 16px; font-weight: 300; color: #4d4d4d;">25 Jan 2022 by Lorem Ipsum
                                 </p>
-                                <h1>JUDUL ARTIKEL
+                                <h4>JUDUL ARTIKEL
                                     LOREM IPSUM
-                                    DOLOR SIT AMET SUI</h1>
-                                <p style="font-size: 24px; font-weight: unset; margin-top: 35px; line-height: unset;">
+                                    DOLOR SIT AMET SUI</h4>
+                                <p>
                                     Lorem
                                     ipsum dolor sit
                                     amet,
@@ -436,8 +441,6 @@
                                         <div class="uk-panel">
                                             <img src="img/news-1.jpg" class="img-news-funfact" alt="">
                                             <div class="uk-position-center uk-text-center">
-                                                <!-- <h2 uk-slider-parallax="x: 100,-100">Heading</h2>
-                                            <p uk-slider-parallax="x: 200,-200">Lorem ipsum dolor sit amet.</p> -->
                                             </div>
                                         </div>
                                     </li>
@@ -445,8 +448,6 @@
                                         <div class="uk-panel">
                                             <img src="img/news-2.jpg" class="img-news-funfact" alt="">
                                             <div class="uk-position-center uk-text-center">
-                                                <!-- <h2 uk-slider-parallax="x: 100,-100">Heading</h2>
-                                            <p uk-slider-parallax="x: 200,-200">Lorem ipsum dolor sit amet.</p> -->
                                             </div>
                                         </div>
                                     </li>
@@ -454,39 +455,15 @@
                                         <div class="uk-panel">
                                             <img src="img/news-3.jpg" class="img-news-funfact" alt="">
                                             <div class="uk-position-center uk-text-center">
-                                                <!-- <h2 uk-slider-parallax="x: 100,-100">Heading</h2>
-                                            <p uk-slider-parallax="x: 200,-200">Lorem ipsum dolor sit amet.</p> -->
                                             </div>
                                         </div>
                                     </li>
                                 </ul>
-
                                 <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#"
-                                    uk-slidenav-previous uk-slider-item="previous" class="arrow-slider-news"></a>
+                                    uk-slidenav-previous uk-slider-item="previous"></a>
                                 <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#"
                                     uk-slidenav-next uk-slider-item="next"></a>
-
                             </div>
-                            <!-- <div class="owl-carousel owl-theme nav-inside nav-style-1 nav-light"
-                            data-plugin-options="{'items': 1, 'margin': 10, 'loop': false, 'nav': true, 'dots': false}">
-                            <div>
-                                <div class="img-thumbnail border-0 p-0 d-block">
-                                    <img class="img-fluid border-radius-0 img-news" src="img/slider-kosmik.jpg" alt="">
-                                </div>
-                            </div>
-                            <div>
-                                <div class="img-thumbnail border-0 p-0 d-block">
-                                    <img class="img-fluid border-radius-0 img-news" src="img/slider-kosmik-2.jpg"
-                                        alt="">
-                                </div>
-                            </div>
-                            <div>
-                                <div class="img-thumbnail border-0 p-0 d-block">
-                                    <img class="img-fluid border-radius-0 img-news" src="img/slider-kosmik-3.jpg"
-                                        alt="">
-                                </div>
-                            </div>
-                        </div> -->
 
                         </div>
                         <div class="span9 btn-block">
@@ -546,7 +523,7 @@
 
                         <ul class="list list-unstyled mb-0">
                             <li class="mb-0"><a href="about.html">About</a></li>
-                            <li class="mb-0"><a href="#">Catalog</a></li>
+                            <li class="mb-0"><a href="catalog.html">Catalog</a></li>
                             <li class="mb-0"><a href="#">News</a></li>
                             <li class="mb-0"><a href="#">Contact</a></li>
                         </ul>

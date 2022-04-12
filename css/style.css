@@ -1,5 +1,48 @@
+::selection {
+    background: #fbf248be;
+    color: #000;
+    text-shadow: none;
+  }
+
+body {
+    font-family: Poppins, sans-serif !important;
+}
+
+a {
+    color: #000;
+}
+
+a:hover {
+    color: #fbf348;
+}
+
+.header-logo-display {
+    position: absolute;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 20px
+}
+
+.header-display.desktop.dark .header-row{
+    padding-bottom: 0 !important;
+}
+
+.header-display.desktop.dark, .header-display.desktop.dark .header-logo-display {
+    background: #000;
+}
+
+.header-display.desktop.dark .header-logo-display {
+    position: relative;
+}
+
 .container-fluid {
     width: 95%
+}
+
+.container.container-full {
+    margin: 0 !important;
+    padding: 0 !important;
+    max-width: 100%;
 }
 
 .side-header-narrow-bar-logo.bg-color-primary.d-flex.justify-content-center {
@@ -126,23 +169,22 @@ nav.menu-display a:hover {
 }
 
 img.d-block.w-100.img-featured {
-    height: 750px;
+    height: auto;
     object-fit: cover
 }
 
-.carousel-control-prev {
-    left: -75px
+.uk-position-center-left {
+    left: unset !important;
 }
 
-.carousel-control-next {
-    right: -75px
+.carousel-control-next,
+.carousel-control-prev {
+    opacity: 1;
+    width: 10%;
 }
 
 .carousel-caption h1 {
     color: #fff !important;
-    font-size: 75px;
-    font-weight: 700;
-    text-transform: uppercase
 }
 
 .carousel-caption p {
@@ -150,29 +192,54 @@ img.d-block.w-100.img-featured {
     font-size: 27px
 }
 
-h3.title-featured {
-    font-size: 40px;
-    line-height: 40px;
+h1 {
+    font-size: 5vw;
+    line-height: 1em;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 4vw;
+    line-height: 1em;
     font-weight: 800;
     text-transform: uppercase
 }
 
-h5.tag-featured {
+h3 {
+    font-size: 3vw;
+    line-height: 1em;
+    font-weight: 800;
+    text-transform: uppercase
+}
+
+h4 {
+    font-size: 2vw;
+    line-height: 1em;
+    font-weight: 800;
+    text-transform: uppercase
+}
+
+h5 {
+    font-size: 1vw;
+    line-height: 1em;
+    font-weight: 800;
+    text-transform: uppercase
+}
+
+p {
+    line-height: 1em;
+    color: #4d4d4d;
+    font-weight: normal;
+    font-size: 2vw;
+}
+
+.tag-featured {
     width: 70%;
     margin: auto;
     padding: 0 0 50px 0;
-    font-size: 30px;
     text-align: center;
-    line-height: 35px;
     text-transform: unset;
     margin-top: 50px;
-    font-weight: 800
-}
-
-h3.newest-titles {
-    font-size: 40px;
-    font-weight: 800;
-    text-transform: uppercase
 }
 
 a.button-link {
@@ -192,21 +259,9 @@ a.button-link:hover {
     text-decoration: none
 }
 
-.title-about h3 {
-    font-size: 40px;
-    font-weight: 800;
-    text-transform: uppercase
-}
-
 .content-about {
     font-size: 25px;
     color: #000
-}
-
-.content-about p {
-    line-height: 35px;
-    color: #4d4d4d;
-    font-weight: 700
 }
 
 .button-about {
@@ -230,33 +285,14 @@ a.button-link:hover {
 }
 
 .py-5 {
-    padding-top: 10rem !important;
-    padding-bottom: 10rem !important
-}
-
-.title-new-funfact h3 {
-    font-size: 40px;
-    font-weight: 800;
-    text-transform: uppercase
-}
-
-.title-new-funfact p {
-    font-size: 23px;
-    color: #000;
-    font-weight: 700;
-    line-height: 10px
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important
 }
 
 img.img-fluid.img-contact {
     height: 480px;
     object-fit: cover;
     margin-bottom: 20px
-}
-
-.title-contact h3 {
-    font-size: 40px;
-    font-weight: 800;
-    text-transform: uppercase
 }
 
 .information-contact p {
@@ -317,20 +353,18 @@ button.btn.btn-large.btn-block.btn-primary {
 
 button.btn.btn-large.btn-block.btn-primary:hover {
     background-color: #000;
-    color: #fff
+    color: #fbf348;
 }
 
-.header-logo-display {
-    position: absolute;
-    justify-content: space-between;
-    width: 100%;
-    padding-top: 20px
+.btn.btn-black {
+    background-color: #000;
+    color: #fff;
 }
 
 .image-newest {
     display: block;
-    width: 830px;
-    height: 440px
+    width: auto;
+    height: auto;
 }
 
 .overlay-newest {
@@ -340,7 +374,7 @@ button.btn.btn-large.btn-block.btn-primary:hover {
     left: 0;
     right: 0;
     height: 100%;
-    width: 830px;
+    width: auto;
     opacity: 0;
     transition: .5s ease;
     background-color: rgba(0, 0, 0, .719)
@@ -352,29 +386,23 @@ button.btn.btn-large.btn-block.btn-primary:hover {
 
 .judul-karya-newest {
     color: #fff;
-    font-size: 32px;
-    position: absolute;
-    top: 80%;
-    left: 19%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
+    font-size: 2vw;
     font-weight: 700;
     text-transform: uppercase
 }
 
 .kreator-karya-newest {
     color: #fbf348;
-    font-size: 20px;
+    font-size: 1vw;
+    font-weight: 700;
+    margin: 0;
+}
+
+.newest-ovr-wrap {
     position: absolute;
-    top: 85%;
-    left: 23.5%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-    font-weight: 700
+    padding: 15px;
+    bottom: 10%;
+    left: 5%;
 }
 
 .container-newest {
@@ -515,9 +543,11 @@ img.img-fluid.border-radius-0.img-news {
     font-size: 40px
 }
 
-.title-new-funfact h1 {
-    font-size: 43px;
-    font-weight: 700
+.title-new-funfact p {
+    font-size: 2vw;
+    font-weight: normal;
+    line-height: 1em;
+    color: #4d4d4d;
 }
 
 .uk-position-small.uk-hidden-hover.uk-icon.uk-slidenav svg {
@@ -528,10 +558,6 @@ img.img-fluid.border-radius-0.img-news {
 
 #carouselExampleDark .uk-slidenav svg polyline {
     stroke-width: 3px
-}
-
-#carouselExampleDark .carousel-control-prev {
-    left: unset !important
 }
 
 #carouselExampleDark button:hover .uk-slidenav svg,
@@ -547,26 +573,6 @@ img.img-fluid.border-radius-0.img-news {
 
 img.logo-menu-side {
     width: 100%
-}
-
-section.section-services {
-    padding-top: 50px;
-    padding-bottom: 50px
-}
-
-section.py-5.first-section-about {
-    padding-bottom: 50px !important;
-    padding-top: 100px !important
-}
-
-section.py-5.section-timeline {
-    padding-top: 50px !important;
-    padding-bottom: 50px !important
-}
-
-section.py-5.section-our-team {
-    padding-top: 50px !important;
-    padding-bottom: 50px !important
 }
 
 .our-team {
@@ -734,19 +740,20 @@ section.featured {
     margin-top: 60px
 }
 
+.img-news-funfact {
+    height: 35vw;
+}
+
 .uk-active img.img-news-funfact {
-    width: 85%;
-    height: 500px;
+    height: 40vw;
     object-fit: cover;
     margin-top: 0 !important;
     transition: .5s;
-    margin-left: 135px
+    margin-left: 0;
 }
 
-.img-news-funfact {
-    width: 80%;
-    height: 450px;
-    margin-top: 20px
+.uk-width-4-5 {
+    margin: auto;
 }
 
 a.uk-position-center-right.uk-position-small.uk-hidden-hover.uk-icon.uk-slidenav-next.uk-slidenav {
@@ -767,14 +774,17 @@ a.uk-slidenav svg polyline {
     margin-top: -50px
 }
 
-i.bi.bi-chevron-compact-down {
+.arrow-scroll-down {
     position: absolute;
-    color: #ededed;
-    right: 48%;
-    font-size: 70px;
-    top: 90%;
-    z-index: 111;
-    cursor: pointer
+    bottom: 0;
+    width: 100%;
+    text-align: center;    
+    z-index: 100;
+  }
+
+i.bi.bi-chevron-compact-down {
+    font-size: 5vw;
+    cursor: pointer;
 }
 
 html {
@@ -821,9 +831,9 @@ html {
 
 .doodle.doodle-about {
     left: 0;
-    margin-left: -100px;
-    top: 130px
-}
+    margin-left: -5vw;
+    top: 10vh;
+  }
 
 .doodle.doodle-timeline {
     margin-left: -75px;
@@ -887,11 +897,7 @@ h6 {
     font-family: Poppins, sans-serif !important;
     text-decoration: none !important;
     color: rgba(0, 0, 0, .9) !important;
-}
-
-.title-section * {
-    font-weight: 700 !important;
-    text-transform: uppercase
+    margin: 0 0 15px 0;
 }
 
 .content-desc {
@@ -913,6 +919,10 @@ h6 {
 .uk-slider-items li:hover .team-img-hover {
     opacity: 1 !important;
     cursor: pointer
+}
+
+.desc-team {
+    margin: 15px 0;
 }
 
 .modal .close {
@@ -1080,6 +1090,127 @@ h6 {
     }
 }
 
-body {
-    font-family: Poppins, sans-serif !important;
+.nav-tabs {
+    border: none;
+    position: relative;
+    left: -2vw;
+}
+
+.tabs .nav-tabs .nav-item a {
+    border: none !important;
+    color: #000 !important;
+    background: none !important;    
+    font-size: 2vw;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.tabs .nav-tabs .nav-item a.active {
+    color: #000;
+    font-weight: bold;    
+    text-decoration: underline;
+}
+
+.tab-content {
+    border: none;
+    box-shadow: none;
+    background-color: unset;
+    margin-top: 1vw;
+}
+
+.tabs .col-yellow {
+    background-color: #fbf348 !important;
+}
+
+.pilot-post {
+    width: 15vw;
+    height: 15vw;
+    margin: auto;
+}
+
+  .pilot-post img {
+    width: auto;
+    height: auto;
+    position: relative;
+    max-width: 21vw;
+    top: 1vw;
+    left: -3vw;
+  }
+
+  .pilot-title-wrap {
+    text-align: center;
+    padding: 15px;
+  }
+
+  .pilot-title-wrap .title {
+    font-size: 1vw;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 10px;
+  }
+
+  .pilot-title-wrap .author {
+    font-size: 1vw;
+    font-weight: 500;
+    color: #4d4d4d;
+    margin: 0;
+  }
+
+.catalog-item-wrap {
+    left: -4vw;
+    position: absolute;
+    top: 25%;
+    z-index: 1;
+  }
+
+  .catalog-item-wrap .catalog-title {
+    font-size: 6vw;
+    color: #000;
+    font-weight: bold;
+    line-height: 1em;
+}
+
+.catalog-item-wrap .catalog-author {
+    font-size: 2vw;
+    color: #000;
+    font-weight: 600;
+    line-height: 1em;
+    margin-bottom: 1vw;
+    display: block;
+}
+
+.catalog-item-wrap button {
+    display: block;
+    margin-top: 1.5vw;
+    border-radius: 0 !important;
+    font-size: 1.5vw;
+    font-weight: bold;
+    padding: 20px 20px;
+    text-decoration: none !important;
+    text-decoration-color: unset !important;
+    text-transform: uppercase;
+}
+
+.catalog-item-wrap button:hover {
+    background:#fbf348;
+    color: #000;
+    border: 1px solid #000;
+}
+
+.catalog-item-wrap button::before, .catalog-item-wrap button::after {
+    text-align: none !important;
+}
+
+.catalog-img-wrap {
+    right: -4vw;
+    position: relative;
+    margin-top: -3vw;
+}
+
+.catalog-img-wrap img {
+    width: auto;
+}
+
+.absolute {
+    position: absolute !important;
 }
