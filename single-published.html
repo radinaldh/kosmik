@@ -239,77 +239,142 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="tabs">
-                            <div class="owl-carousel owl-theme stage-margin owl-loaded owl-drag owl-carousel-init"
-                                data-plugin-options="{'items': 5, 'margin': 10, 'loop': false, 'nav': true, 'dots': false, 'stagePadding': 0}"
-                                style="height: auto;">
-                                <div class="owl-stage-outer">
+                            <div id="publishedBanner" class="owl-carousel owl-theme stage-margin owl-loaded owl-drag owl-carousel-init"
+                                data-plugin-options="{'items': 5, 'margin': 50, 'loop': true, 'nav': true, 'dots': false, 'stagePadding': 0}"
+                                style="height: auto; background: url(img/slider-kosmik-1.jpg)">
+                                <div class="owl-stage-outer" style="height:100vh !important">
                                     <div class="owl-stage nav nav-tabs">
                                         <div class="owl-item nav-item active">
                                             <div>
-                                                <a class="nav-link active" href="#img1" data-bs-toggle="tab">
-                                                    <img alt="" class="img-fluid rounded" src="img/slider-kosmik-1.jpg">
+                                                <a class="nav-link active" href="#img1" data-bs-toggle="tab" onclick="bannerChanged1();">
+                                                    <img id="imgBanner1" alt="" class="banner-publish img-fluid rounded" src="img/slider-kosmik-1.jpg">                                                    
+                                                    <div class="published-overlay"></div>
                                                 </a>
                                             </div>
                                         </div>
                                         <div class="owl-item nav-item">
                                             <div>
-                                                <a class="nav-link" href="#img2" data-bs-toggle="tab">
-                                                    <img alt="" class="img-fluid rounded" src="img/slider-kosmik-2.jpg">
+                                                <a class="nav-link" href="#img2" data-bs-toggle="tab" onclick="bannerChanged2();">
+                                                    <img id="imgBanner2" alt="" class="banner-publish img-fluid rounded" src="img/slider-kosmik-2.jpg">
+                                                    <div class="published-overlay"></div>
                                                 </a>
                                             </div>
                                         </div>
                                         <div class="owl-item nav-item">
                                             <div>
-                                                <a class="nav-link" href="#img3" data-bs-toggle="tab">
-                                                    <img alt="" class="img-fluid rounded" src="img/slider-kosmik-3.jpg">
+                                                <a class="nav-link" href="#img3" data-bs-toggle="tab" onclick="bannerChanged3();">
+                                                    <img id="imgBanner3" alt="" class="banner-publish img-fluid rounded" src="img/slider-kosmik-3.jpg">
+                                                    <div class="published-overlay"></div>
                                                 </a>
                                             </div>
                                         </div>
                                         <div class="owl-item nav-item">
                                             <div>
-                                                <a class="nav-link" href="#img4" data-bs-toggle="tab">
-                                                    <img alt="" class="img-fluid rounded" src="img/slider-kosmik-1.jpg">
+                                                <a class="nav-link" href="#img1" data-bs-toggle="tab" onclick="bannerChanged1();">
+                                                    <img id="imgBanner1" alt="" class="banner-publish img-fluid rounded" src="img/slider-kosmik-1.jpg">
+                                                    <div class="published-overlay"></div>
                                                 </a>
                                             </div>
                                         </div>
                                         <div class="owl-item nav-item">
                                             <div>
-                                                <a class="nav-link" href="#img5" data-bs-toggle="tab">
-                                                    <img alt="" class="img-fluid rounded" src="img/slider-kosmik-2.jpg">
+                                                <a class="nav-link" href="#img2" data-bs-toggle="tab" onclick="bannerChanged2();">
+                                                    <img id="imgBanner2" alt="" class="banner-publish img-fluid rounded" src="img/slider-kosmik-2.jpg">
+                                                    <div class="published-overlay"></div>
                                                 </a>
                                             </div>
                                         </div>
                                         <div class="owl-item nav-item">
                                             <div>
-                                                <a class="nav-link" href="#img6" data-bs-toggle="tab">
-                                                    <img alt="" class="img-fluid rounded" src="img/slider-kosmik-3.jpg">
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="owl-item nav-item">
-                                            <div>
-                                                <a class="nav-link" href="#img7" data-bs-toggle="tab">
-                                                    <img alt="" class="img-fluid rounded" src="img/slider-kosmik-1.jpg">
+                                                <a class="nav-link" href="#img3" data-bs-toggle="tab" onclick="bannerChanged3();">
+                                                    <img id="imgBanner3" alt="" class="img-fluid rounded" src="img/slider-kosmik-3.jpg">
                                                 </a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="owl-nav">
-                                    <button type="button" role="presentation" class="owl-prev disabled"></button>
-                                    <button type="button" role="presentation" class="owl-next"></button>
-                                </div>
+                                <style>
+                                    .owl-stage.nav.nav-tabs {
+                                        position: absolute;
+                                        bottom: 20%;
+                                      }
+
+                                    .owl-nav {
+                                        top: unset !important;
+                                        bottom: 30% !important;
+                                    }
+
+                                    .owl-item .nav-link {
+                                        padding: 0 !important;
+                                    }
+
+                                    .owl-item .nav-link img {
+                                        border-radius: 0 !important;
+                                        border: 2px solid #000;
+                                    }
+
+
+                                    .published-overlay{
+                                        opacity: 0;
+                                        transition: 1s;
+                                        position: absolute;
+                                        z-index: 2;
+                                        height: 100%;
+                                        width: 100%;
+                                        background-color: rgb(239, 255, 8);
+                                        top:0;
+                                        left: 0;
+                                        padding: 8px 16px 8px 16px;
+                                    }
+
+                                    .nav-link.active .published-overlay{                                        
+                                        opacity: 0.5;
+                                    }
+                                </style>
+                                <script>
+                                    var bnr = document.getElementById('publishedBanner');
+                                    var bnrSrc1 = document.getElementById('imgBanner1').src;
+                                    var bnrSrc2 = document.getElementById('imgBanner2').src;
+                                    var bnrSrc3 = document.getElementById('imgBanner3').src;
+                                    function bannerChanged1(){
+                                        bnr.style.background = 'url('+bnrSrc1+')';
+                                    }
+                                    function bannerChanged2(){
+                                        bnr.style.background = 'url('+bnrSrc2+')';
+                                    }
+                                    function bannerChanged3(){
+                                        bnr.style.background = 'url('+bnrSrc3+')';
+                                    }
+                                </script>
                             </div>
                             <div class="tab-content">
                                 <div id="img1" class="tab-pane active">
                                     <div class="container-fluid">
                                         <div class="row">
                                             <div class="col-lg-3 col-yellow text-center py-3">
-                                                <h5>
-                                                    IMG 1
+                                                <h5 class="mb-0">
+                                                    GENRE
                                                 </h5>
-                                                <p class="single-paragraph my-0">
-                                                    TEST
+                                                <p class="single-paragraph my-2">
+                                                    Slice of Life
+                                                </p>
+                                                <h5 class="mb-0">
+                                                    ENGAGEMENT
+                                                </h5>
+                                                <p class="single-paragraph my-2">
+                                                    4,000,000 views
+                                                </p>
+                                                <h5 class="mb-0">
+                                                    RELEASE
+                                                </h5>
+                                                <p class="single-paragraph my-2">
+                                                    2021 - now
+                                                </p>
+                                                <h5 class="mb-0">
+                                                    FORMAT
+                                                </h5>
+                                                <p class="single-paragraph my-2">
+                                                    Digital, Paperback
                                                 </p>
                                             </div>
                                             <div class="col-lg-9">
