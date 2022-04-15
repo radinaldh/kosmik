@@ -159,14 +159,37 @@ nav.menu-display a {
     padding: 20px;
     font-size: 24px;
     text-transform: uppercase;
-    font-weight: 400;
-    transition: .5s
+    font-weight: 600;
+    transition: .5s;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
+    position: relative;
 }
 
 nav.menu-display a:hover {
     color: #fbf348;
-    text-decoration: underline;
-    font-weight: 700
+    font-weight: 600;
+    text-decoration: none !important;
+    -webkit-text-stroke-width: unset;
+    -webkit-text-stroke-color: unset;
+}
+
+nav.menu-display a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 20px;
+    left: 0;
+    background-color: #fbf348;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+nav.menu-display a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 img.d-block.w-100.img-featured {
@@ -232,6 +255,10 @@ p {
     color: #4d4d4d;
     font-weight: normal;
     font-size: 2vw;
+}
+
+.single-paragraph {
+    font-size: 12px;
 }
 
 .tag-featured {
@@ -312,7 +339,7 @@ img.img-fluid.img-contact {
     width: 80%
 }
 
-#footer{
+#footer {
     margin-top: 0;
     border: none !important;
 }
@@ -419,7 +446,6 @@ button.btn.btn-large.btn-block.btn-primary:hover {
 
 .active {
     color: #fbf348 !important;
-    text-decoration: underline;
     font-weight: 700 !important
 }
 
@@ -1102,13 +1128,13 @@ h6 {
     color: #000 !important;
     background: none !important;
     font-size: 2vw;
-    font-weight: 500;
+    font-weight: 600;
     text-transform: uppercase;
 }
 
 .tabs .nav-tabs .nav-item a.active {
     color: #000;
-    font-weight: bold;
+    font-weight: 600 !important;
     text-decoration: underline;
 }
 
@@ -1285,10 +1311,12 @@ h6 {
 }
 
 section.dark-section {
-    background:#111111;
+    background: #111111;
 }
 
-section.dark-section > * > * > * > * > *, section.dark-section > * > * > * > *, section.dark-section > * > * > * {
+section.dark-section>*>*>*>*>*,
+section.dark-section>*>*>*>*,
+section.dark-section>*>*>* {
     color: #fff !important;
     line-height: 1.2em;
 }
