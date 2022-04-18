@@ -16,3 +16,20 @@ function reveal() {
     }
 }
 window.addEventListener("scroll", reveal), reveal();
+
+var bnr = document.getElementById('publishedBanner');
+var bnrSrc1 = document.getElementById('imgBanner1').src;
+var bnrSrc2 = document.getElementById('imgBanner2').src;
+var bnrSrc3 = document.getElementById('imgBanner3').src;
+
+function bannerChanged1() {
+    bnr.style.background = 'url(' + bnrSrc1 + ')';
+}
+
+function bannerChanged2() {
+    bnr.style.background = 'url(' + bnrSrc2 + ')';
+}
+
+function bannerChanged3() {
+    bnr.style.background = 'url(' + bnrSrc3 + ')';
+}
