@@ -1146,7 +1146,7 @@ h6 {
     margin-top: 1vw;
 }
 
-.tabs .col-yellow {
+.col-yellow {
     background-color: #fbf348 !important;
 }
 
@@ -1396,7 +1396,7 @@ section.dark-section>*>*>* {
     padding: 0 !important;
 }
 
-#publishedDesc p {
+#publishedDesc p, .single-paragraph, .single-paragraph p {
     font-size: 1.5vw;
 }
 
@@ -1431,4 +1431,16 @@ button a, button a:hover {
     font-size: 1.5vw;
     width: 95%;
     left: 2%;
+}
+
+.text-justfify, .text-justify p {
+    text-align: justify !important;
+}
+
+.single-news-title {
+    display: flex;
+}
+
+article p {
+    font-size: 1.5vw;
 }
