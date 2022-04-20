@@ -28,7 +28,7 @@
         display: block;
         width: auto;
         height: auto;
-      }
+    }
 
     .slider-container.rev_slider_wrapper.fullscreen-slider {
         height: 106vh !important;
@@ -156,8 +156,130 @@
         margin: 0 !important;
         font-size: 7vw !important;
     }
-    
+
+    .tag-featured {
+        width: 100%;
+    }
+
     body {
         margin-left: 0 !important;
     }
+
+    h1 {
+        font-size: 8vw;
+    }
+
+    h2 {
+        font-size: 7vw;
+    }
+
+    h3 {
+        font-size: 6vw;
+    }
+
+    h4 {
+        font-size: 5vw;
+    }
+
+    h5 {
+        font-size: 4.5vw;
+    }
+
+    h6 {
+        font-size: 4vw;
+    }
+
+    p {
+        font-size: 4vw;
+    }
+
+    .title-new-funfact p {
+        font-size: 4vw;
+    }
+
+    .doodle {
+        display: none !important;
+    }
+
+    #header.mobile.dark {
+        position: relative;
+        background: #000;
+    }
+
+    .content-desc-about p {
+        font-size: 4vw;
+    }
+
+    .list-services ul li {
+        font-size: 4vw;
+        line-height: 1em;
+        margin: 5px;
+    }
+
+    .list-services ul li span {
+        font-size: 4vw;
+        left: 0;
+    }
+
+    .arrow-slider-team {
+        text-align: right;
+        padding-right: 0;
+    }
+
+    .button-wrap button span {
+        font-size: 5vw;
+        padding: 15px;
+    }
+
+    #publishedDesc p, .single-paragraph, .single-paragraph p {
+        font-size: 4vw;
+        margin: 15px 0;
+      }
+
+      .published-title-cta p {
+        font-size: 4vw;
+        margin-top: 5vw;
+        width: 100%;
+      }
+
+      .btn-primary.yellow {
+        background-color: #fbf348 !important;
+        border-radius: 0;
+        border: none;
+        color: #000;
+        font-size: 4vw;
+        padding: 5px 20px;
+      }
+
+      .pilot-title-wrap .title {
+        font-size: 3vw;
+      }
+
+      .pilot-title-wrap .author {
+        font-size: 3vw;
+      }
+
+      .tabs .nav-tabs .nav-item a {
+        font-size: 4vw;
+      }
+
+      .pilot-post {
+        width: 30vw;
+        height: 30vw;
+      }
+
+      .pilot-post img {
+        max-width: 35vw;
+        top: 6.5vw;
+        position: relative;
+        left: -3vw;
+      }
+
+      .catalog-item-wrap button {
+          padding: 5px;
+      }
+
+      .catalog-item-wrap {
+        top: 17%;
+      }
 }
