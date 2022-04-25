@@ -231,55 +231,82 @@
         padding: 15px;
     }
 
-    #publishedDesc p, .single-paragraph, .single-paragraph p {
+    #publishedDesc p,
+    .single-paragraph,
+    .single-paragraph p {
         font-size: 4vw;
         margin: 15px 0;
-      }
+    }
 
-      .published-title-cta p {
+    .published-title-cta p {
         font-size: 4vw;
         margin-top: 5vw;
         width: 100%;
-      }
+    }
 
-      .btn-primary.yellow {
+    .btn-primary.yellow {
         background-color: #fbf348 !important;
         border-radius: 0;
         border: none;
         color: #000;
         font-size: 4vw;
         padding: 5px 20px;
-      }
+    }
 
-      .pilot-title-wrap .title {
+    .pilot-title-wrap .title {
         font-size: 3vw;
-      }
+    }
 
-      .pilot-title-wrap .author {
+    .pilot-title-wrap .author {
         font-size: 3vw;
-      }
+    }
 
-      .tabs .nav-tabs .nav-item a {
+    .tabs .nav-tabs .nav-item a {
         font-size: 4vw;
-      }
+    }
 
-      .pilot-post {
+    .pilot-post {
         width: 30vw;
         height: 30vw;
-      }
+    }
 
-      .pilot-post img {
+    .pilot-post img {
         max-width: 35vw;
         top: 6.5vw;
         position: relative;
         left: -3vw;
-      }
+    }
 
-      .catalog-item-wrap button {
-          padding: 5px;
-      }
+    .catalog-item-wrap button {
+        padding: 5px;
+    }
 
-      .catalog-item-wrap {
+    .catalog-item-wrap {
         top: 17%;
-      }
+    }
+
+    .single-section .owl-carousel .owl-nav button.owl-next::before,
+    .single-section .owl-carousel .owl-nav button.owl-prev::before {
+        font-size: 6em;
+    }
+
+    #teamModal {
+        padding: 15px !important;
+    }
+
+    .modal-dialog {
+        width: auto !important;
+        max-width: 100% !important;
+        margin: auto !important;
+        top: 20%;
+        left: unset;
+    }
+
+    .modal button.close span {
+        font-size: 10vw;
+    }
+
+    .modal-body p {
+        font-size: 4vw !important;
+    }
 }

@@ -161,8 +161,6 @@ nav.menu-display a {
     text-transform: uppercase;
     font-weight: 600;
     transition: .5s;
-    -webkit-text-stroke-width: 0.5px;
-    -webkit-text-stroke-color: black;
     position: relative;
 }
 
@@ -966,9 +964,10 @@ h6 {
 .modal-dialog {
     width: auto !important;
     max-width: 40% !important;
-    margin: auto !important;
-    top: 25%
-}
+    margin: auto;
+    top: 25%;
+    left: 5%;
+  }
 
 .modal-header {
     border-bottom: none !important
@@ -993,7 +992,7 @@ h6 {
     scrollbar-width: none;
     overflow: auto;
     height: auto;
-    max-height: 90%;
+    max-height: 50vw;
     cursor: grab
 }
 
@@ -1020,7 +1019,7 @@ h6 {
 
 .button-scroll-wrapper {
     background-color: #fbf348;
-    height: 90%
+    height: 50vw
 }
 
 .button-scroll-wrapper .button-wrap {
@@ -1465,4 +1464,12 @@ article p {
     transform: scaleX(0.5);
     transform-origin: bottom left;
     left: 25%;
+}
+
+.modal-body p {
+    font-size: 1vw !important;
+}
+
+.search-home:-webkit-input-placeholder{
+    font-size: 10px;
 }
