@@ -76,20 +76,16 @@ html.side-header-hamburguer-sidebar #header.side-header {
     border-radius: 0
 }
 
-.hamburguer-btn .hamburguer span:nth-child(2) {
-    margin-top: 19px
-}
-
-.hamburguer-btn .hamburguer span:nth-child(1) {
-    margin-top: 17px
-}
-
-.hamburguer-btn .hamburguer span:nth-child(3) {
-    margin-top: 20px
+html.side-header-hamburguer-sidebar-narrow-bar .body {
+    margin-left: 50px;
 }
 
 html.side-header-hamburguer-sidebar #header.side-header.side-header-lg {
     max-width: 100%
+}
+
+html.side-header-hamburguer-sidebar-narrow-bar #header.side-header {
+    transform: translateX(50px);
 }
 
 #header .header-body {
@@ -147,7 +143,7 @@ div#revolutionSlider_forcefullwidth {
 
 .header-logo-display img {
     margin-left: 40px;
-    width: 75%
+    width: 60%
 }
 
 nav.menu-display li {
@@ -549,11 +545,6 @@ section.catalog {
     font-weight: 700 !important
 }
 
-.hamburguer-btn.hamburguer-btn-sticky-dark {
-    transform: rotate(90deg);
-    margin-left: 30px
-}
-
 .header-logo-display .menu-display {
     margin-top: 15px;
     margin-right: 50px
@@ -802,6 +793,18 @@ a.uk-slidenav svg polyline {
     margin-top: -50px
 }
 
+.side-header-narrow-bar {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    width: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 9992;
+}
+
 .arrow-scroll-down {
     position: absolute;
     bottom: 0;
@@ -819,10 +822,7 @@ html {
 }
 
 .hamburguer-btn.active .close span {
-    width: 50px;
-    transition: ease all .3s;
     height: 3px;
-    margin-top: 20px
 }
 
 .carousel-indicators button.active {
@@ -871,16 +871,17 @@ html {
 .hamburguer-btn .hamburguer span {
     position: absolute;
     left: 0;
-    width: 60px;
-    height: 4px;
+    width: 40px;
+    height: 3px;
     transition: ease width .3s;
     border-radius: 0
 }
 
 .hamburguer-btn.hamburguer-btn-sticky-dark {
     transform: rotate(90deg);
-    width: 5em;
-    height: 5em
+    width: 4em;
+    height: 3em;
+    margin: 0;
 }
 
 img.logo-footer {
@@ -911,7 +912,7 @@ html .scroll-to-top:hover {
 }
 
 .side-header .header-body {
-    max-width: 94.4vw;
+    max-width: 97vw;
     position: relative
 }
 
@@ -967,7 +968,7 @@ h6 {
     margin: auto;
     top: 25%;
     left: 5%;
-  }
+}
 
 .modal-header {
     border-bottom: none !important
@@ -1470,6 +1471,6 @@ article p {
     font-size: 1vw !important;
 }
 
-.search-home:-webkit-input-placeholder{
+.search-home:-webkit-input-placeholder {
     font-size: 10px;
 }

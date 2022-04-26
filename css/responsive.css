@@ -309,4 +309,38 @@
     .modal-body p {
         font-size: 4vw !important;
     }
+
+    .accordion .card .card-title a {
+        font-size: 4vw;
+        line-height: 1em;
+    }
+
+    p.news-item-title {
+        font-size: 2em;
+    }
+
+    .pym-1{
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+
+    .pym-2{
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+
+    .pym-3{
+        padding-top: 3em;
+        padding-bottom: 3em;
+    }
+
+    .pym-4{
+        padding-top: 4em;
+        padding-bottom: 4em;
+    }
+
+    .pym-5{
+        padding-top: 5em;
+        padding-bottom: 5em;
+    }
 }
